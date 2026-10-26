@@ -10,6 +10,7 @@ import { ServicesSection } from './components/ServicesSection';
 import { SpecialtiesSection } from './components/SpecialtiesSection';
 import { TherapyQuiz } from './components/TherapyQuiz';
 import { PractitionerProfile } from './components/PractitionerProfile';
+import { TestimonialsSection } from './components/TestimonialsSection';
 import { FeesAndBooking } from './components/FeesAndBooking';
 import { LocalSeoSection } from './components/LocalSeoSection';
 import { FaqSection } from './components/FaqSection';
@@ -88,6 +89,10 @@ export default function App() {
             />
 
             <PractitionerProfile />
+
+            <TestimonialsSection
+              onOpenBooking={() => handleOpenBooking()}
+            />
 
             <FeesAndBooking
               onOpenBookingModal={(serviceId) => handleOpenBooking(serviceId)}
