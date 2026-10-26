@@ -1,6 +1,7 @@
 import React from 'react';
 import { PRACTICE_INFO } from '../data/counsellingData';
 import { MapPin, Navigation, Car, Bus, Video, Clock } from 'lucide-react';
+import { LocalReachMap } from './LocalReachMap';
 
 export const LocalSeoSection: React.FC = () => {
   const nearbyAreas = [
@@ -18,7 +19,7 @@ export const LocalSeoSection: React.FC = () => {
     <section id="location" className="py-16 md:py-24 bg-white border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-2xl mb-10">
           <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Practice Location & Accessibility
           </div>
@@ -28,6 +29,11 @@ export const LocalSeoSection: React.FC = () => {
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
             Finding a therapy room where you feel safe, unobserved, and comfortable is vital. Our practice is situated on a quiet residential street with free on-street parking and easy transport access.
           </p>
+        </div>
+
+        {/* Visualized Stylized Reach Map Graphic */}
+        <div className="mb-10">
+          <LocalReachMap />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
