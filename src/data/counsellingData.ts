@@ -30,7 +30,39 @@ export interface FAQItem {
 export const PRACTICE_INFO = {
   name: "Talk Aid Counselling Services",
   shortName: "Talk Aid",
-  practitionerTitle: "Qualified Counsellor, Psychotherapist & Clinical Supervisor",
+  practitionerName: "Raksha Patel",
+  practitionerTitle: "Qualified Counsellor, Psychotherapist & Clinical Supervisor (MBACP)",
+  logoUrl: "/images/logo.png",
+  faviconUrl: "/images/favicon.png",
+  images: {
+    logo: "/images/logo.png",
+    room1: "/images/room-1.jpeg",
+    room2: "/images/room-2.jpeg",
+    room3: "/images/room-3.jpeg",
+    banner1: "/images/banner-1.jpg",
+    banner2: "/images/banner-2.jpg",
+    teamIndex: "/images/team-index.png",
+    servicesIndex: "/images/services-index.png",
+    bacpBadge: "/images/bacp-badge.png",
+    psychologyToday: "/images/psychology-today.jpg",
+    counsellingDirectory: "/images/counselling-directory.jpg",
+    gallery: [
+      "/images/room-1.jpeg",
+      "/images/room-2.jpeg",
+      "/images/room-3.jpeg",
+      "/images/gal-1.jpeg",
+      "/images/gal-2.jpeg",
+      "/images/gal-3.jpeg",
+      "/images/gal-4.jpeg"
+    ]
+  },
+  verificationLinks: {
+    bacp: "https://www.bacp.co.uk/profile/292d84a5-5090-e711-80e8-3863bb349ac0/Therapist",
+    psychologyToday: "https://www.psychologytoday.com/gb/counselling/raksha-patel-leicester-eng/384230",
+    counsellingDirectory: "https://www.counselling-directory.org.uk/counsellors/raksha-patel",
+    facebook: "https://www.facebook.com/Raksha-Patel-Talkaid-Counselling-and-Talking-Therapy-1328299260628846/",
+    instagram: "https://www.instagram.com/talkaidcounsellingservices/"
+  },
   credentials: [
     "Registered Member MBACP (British Association for Counselling & Psychotherapy)",
     "Enhanced DBS Checked",

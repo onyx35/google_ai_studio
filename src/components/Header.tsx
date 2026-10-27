@@ -20,15 +20,15 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200">
       {/* Top Reassurance & Quick Contact Bar */}
-      <div className="bg-stone-900 text-stone-200 text-xs py-2 px-4">
+      <div className="bg-[#b4c271] text-stone-900 border-b border-[#9eb05b]/50 text-xs py-2 px-4 shadow-2xs">
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 text-emerald-400 font-medium">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span className="flex items-center gap-1.5 text-stone-950 font-bold">
+              <span className="w-2 h-2 rounded-full bg-[#34440e] animate-pulse"></span>
               Accepting New Clients
             </span>
-            <span className="text-stone-500 hidden sm:inline">·</span>
-            <span className="text-stone-400 hidden sm:inline">
+            <span className="text-stone-700/60 hidden sm:inline" aria-hidden="true">·</span>
+            <span className="text-stone-900 font-medium hidden sm:inline">
               Oadby, Leicester (In-Person) & UK-Wide (Online Video)
             </span>
           </div>
@@ -36,18 +36,18 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-4 ml-auto">
             <a
               href={`tel:${PRACTICE_INFO.phone.replace(/\s+/g, '')}`}
-              className="flex items-center gap-1.5 hover:text-white transition-colors font-medium"
+              className="flex items-center gap-1.5 text-stone-950 hover:text-black transition-colors font-bold tracking-tight"
             >
-              <Phone className="w-3.5 h-3.5 text-emerald-400" />
+              <Phone className="w-3.5 h-3.5 text-[#2f3d0a]" />
               <span>{PRACTICE_INFO.phone}</span>
             </a>
-            <span className="text-stone-700">|</span>
+            <span className="text-stone-700/50" aria-hidden="true">|</span>
             <button
               onClick={onOpenCrisis}
-              className="text-stone-400 hover:text-rose-300 transition-colors flex items-center gap-1 text-[11px]"
+              className="text-stone-900 hover:text-rose-950 transition-colors flex items-center gap-1 text-[11px] font-semibold cursor-pointer"
               title="Urgent mental health support contacts"
             >
-              <HeartPulse className="w-3 h-3 text-rose-400" />
+              <HeartPulse className="w-3.5 h-3.5 text-rose-800" />
               <span>Urgent Support</span>
             </button>
           </div>
@@ -57,22 +57,13 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Main Navigation */}
       <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between gap-4">
         {/* Brand */}
-        <div className="flex items-center gap-3">
-          <a href="#home" className="group">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-emerald-800 text-white flex items-center justify-center font-serif-display font-semibold text-lg shadow-xs group-hover:bg-emerald-900 transition-colors">
-                TA
-              </div>
-              <div>
-                <h1 className="text-base sm:text-lg font-bold text-stone-900 tracking-tight leading-none font-serif-display">
-                  Talk Aid Counselling
-                </h1>
-                <p className="text-[11px] text-stone-500 font-medium flex items-center gap-1 mt-0.5">
-                  <Shield className="w-3 h-3 text-emerald-700 inline" />
-                  Registered Member MBACP · Leicester
-                </p>
-              </div>
-            </div>
+        <div className="flex items-center w-1/2 max-w-[50%] shrink-0">
+          <a href="#home" className="group flex items-center w-full">
+            <img
+              src={PRACTICE_INFO.images.logo}
+              alt="Talk Aid Counselling Services Logo"
+              className="w-full sm:w-[48vw] md:w-[46vw] max-w-[480px] h-auto object-contain transition-transform group-hover:scale-[1.01]"
+            />
           </a>
         </div>
 

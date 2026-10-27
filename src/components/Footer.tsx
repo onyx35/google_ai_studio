@@ -19,13 +19,22 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
           {/* Brand & Ethos */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-emerald-700 text-white flex items-center justify-center font-serif-display font-semibold text-base">
-                TA
+            <div className="flex items-center gap-3">
+              <div className="bg-white p-2 rounded-xl inline-block shadow-xs">
+                <img
+                  src={PRACTICE_INFO.images.logo}
+                  alt="Talk Aid Counselling Services Logo"
+                  className="h-10 w-auto object-contain"
+                />
               </div>
-              <span className="text-lg font-bold text-white font-serif-display">
-                Talk Aid Counselling
-              </span>
+              <div>
+                <span className="text-base font-bold text-white font-serif-display block">
+                  Talk Aid Counselling
+                </span>
+                <span className="text-xs text-stone-400">
+                  {PRACTICE_INFO.practitionerName} · MBACP
+                </span>
+              </div>
             </div>
             
             <p className="text-stone-400 text-xs leading-relaxed max-w-sm">
@@ -39,6 +48,46 @@ export const Footer: React.FC<FooterProps> = ({
               </p>
               <p>Adhering to the BACP Ethical Framework for Good Practice</p>
               <p>Enhanced DBS Cleared · Fully Insured for Private Practice</p>
+            </div>
+
+            {/* Badges strip in footer */}
+            <div className="pt-3 flex items-center gap-3">
+              <a
+                href={PRACTICE_INFO.verificationLinks.bacp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-1.5 rounded-lg inline-block opacity-90 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src={PRACTICE_INFO.images.bacpBadge}
+                  alt="BACP Registered"
+                  className="h-6 w-auto"
+                />
+              </a>
+              <a
+                href={PRACTICE_INFO.verificationLinks.psychologyToday}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-1.5 rounded-lg inline-block opacity-90 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src={PRACTICE_INFO.images.psychologyToday}
+                  alt="Psychology Today"
+                  className="h-6 w-auto"
+                />
+              </a>
+              <a
+                href={PRACTICE_INFO.verificationLinks.counsellingDirectory}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-1.5 rounded-lg inline-block opacity-90 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src={PRACTICE_INFO.images.counsellingDirectory}
+                  alt="Counselling Directory"
+                  className="h-6 w-auto"
+                />
+              </a>
             </div>
           </div>
 

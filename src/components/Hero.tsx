@@ -77,74 +77,103 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             {/* Unboxed Trust Signals */}
-            <div className="pt-6 border-t border-stone-200 grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-xs text-stone-600">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
-                <span>No GP Referral Required</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Lock className="w-4 h-4 text-emerald-700 shrink-0" />
-                <span>100% Confidential</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
-                <span>Enhanced DBS Checked</span>
+            {/* Trust Directory Badges directly from talkaid website */}
+            <div className="pt-6 border-t border-stone-200">
+              <p className="text-[11px] font-bold uppercase tracking-wider text-stone-500 mb-3">
+                Verified Professional Registrations:
+              </p>
+              <div className="flex flex-wrap items-center gap-4">
+                <a
+                  href={PRACTICE_INFO.verificationLinks.bacp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center gap-2"
+                  title="View BACP Registered Member Profile"
+                >
+                  <img
+                    src={PRACTICE_INFO.images.bacpBadge}
+                    alt="BACP Registered Member"
+                    className="h-8 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href={PRACTICE_INFO.verificationLinks.psychologyToday}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center gap-2"
+                  title="View Psychology Today Verified Profile"
+                >
+                  <img
+                    src={PRACTICE_INFO.images.psychologyToday}
+                    alt="Psychology Today Verified"
+                    className="h-8 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href={PRACTICE_INFO.verificationLinks.counsellingDirectory}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center gap-2"
+                  title="View Counselling Directory Profile"
+                >
+                  <img
+                    src={PRACTICE_INFO.images.counsellingDirectory}
+                    alt="Counselling Directory Verified"
+                    className="h-8 w-auto object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Right Card: Immediate Reassurance & Availability */}
+          {/* Right Card: Genuine Consulting Room Photo & Reassurance */}
           <div className="lg:col-span-5">
-            <div className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/90 shadow-sm relative">
-              <div className="flex items-center justify-between pb-4 mb-4 border-b border-stone-100">
-                <div>
-                  <span className="text-[11px] font-semibold tracking-wider text-emerald-800 uppercase block">
-                    Session Availability
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/90 shadow-sm relative">
+              {/* Actual Therapy Room Photograph from Website */}
+              <div className="relative rounded-2xl overflow-hidden mb-5 border border-stone-200/80 aspect-4/3 group">
+                <img
+                  src={PRACTICE_INFO.images.room1}
+                  alt="Talk Aid Consulting Room in Oadby, Leicester"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3 text-white">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300 block">
+                    The Talk Aid Consulting Room
                   </span>
-                  <p className="text-sm font-semibold text-stone-900">
-                    Appointments Within 7 Days
+                  <p className="text-xs font-medium text-stone-100">
+                    19 Highcroft Avenue, Oadby · Discreet, quiet & comfortable
                   </p>
-                </div>
-                <div className="w-9 h-9 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-800">
-                  <Shield className="w-4 h-4" />
                 </div>
               </div>
 
               {/* Service Quick-Select preview */}
-              <div className="space-y-3 mb-5">
+              <div className="space-y-2.5 mb-5">
                 <div className="p-3 rounded-xl bg-stone-50 border border-stone-100 hover:border-emerald-200 transition-colors">
-                  <div className="flex justify-between items-baseline mb-1">
-                    <span className="font-semibold text-sm text-stone-900">Adult 1-to-1 Therapy</span>
+                  <div className="flex justify-between items-baseline mb-0.5">
+                    <span className="font-semibold text-xs sm:text-sm text-stone-900">Adult 1-to-1 Psychotherapy</span>
                     <span className="text-xs font-semibold text-emerald-800">£60 – £90</span>
                   </div>
-                  <p className="text-xs text-stone-500">
+                  <p className="text-[11px] text-stone-500">
                     Anxiety, depression, trauma, PTSD, grief & burnout support.
                   </p>
                 </div>
 
                 <div className="p-3 rounded-xl bg-stone-50 border border-stone-100 hover:border-emerald-200 transition-colors">
-                  <div className="flex justify-between items-baseline mb-1">
-                    <span className="font-semibold text-sm text-stone-900">Couples & Relationships</span>
+                  <div className="flex justify-between items-baseline mb-0.5">
+                    <span className="font-semibold text-xs sm:text-sm text-stone-900">Couples & Relationship Counselling</span>
                     <span className="text-xs font-semibold text-emerald-800">£90</span>
                   </div>
-                  <p className="text-xs text-stone-500">
+                  <p className="text-[11px] text-stone-500">
                     De-escalating conflict, rebuilding trust & intimacy.
-                  </p>
-                </div>
-
-                <div className="p-3 rounded-xl bg-stone-50 border border-stone-100 hover:border-emerald-200 transition-colors">
-                  <div className="flex justify-between items-baseline mb-1">
-                    <span className="font-semibold text-sm text-stone-900">Young People (13–17)</span>
-                    <span className="text-xs font-semibold text-emerald-800">£60</span>
-                  </div>
-                  <p className="text-xs text-stone-500">
-                    Adolescent emotional regulation, school stress & identity.
                   </p>
                 </div>
               </div>
 
               {/* Location options */}
-              <div className="grid grid-cols-2 gap-2 text-xs text-stone-700 mb-5">
+              <div className="grid grid-cols-2 gap-2 text-xs text-stone-700 mb-4">
                 <div className="flex items-center gap-1.5 p-2 rounded-lg bg-stone-100/70">
                   <MapPin className="w-3.5 h-3.5 text-emerald-700 shrink-0" />
                   <span>Oadby (Free Parking)</span>
@@ -156,7 +185,7 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
 
               {/* Direct Call / Contact Banner */}
-              <div className="bg-emerald-950 text-white rounded-xl p-4 flex items-center justify-between gap-3">
+              <div className="bg-emerald-950 text-white rounded-xl p-3.5 flex items-center justify-between gap-3">
                 <div>
                   <p className="text-[11px] text-emerald-300 font-medium">Prefer to speak first?</p>
                   <p className="text-sm font-semibold tracking-tight">{PRACTICE_INFO.phone}</p>

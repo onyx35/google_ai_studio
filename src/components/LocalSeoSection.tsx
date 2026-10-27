@@ -33,23 +33,39 @@ export const LocalSeoSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Address and Access Notes */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="bg-stone-50 rounded-2xl p-6 border border-stone-200">
-              <div className="flex items-start gap-3.5 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-emerald-800 text-white flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-stone-900 text-base font-serif-display">
-                    {PRACTICE_INFO.name}
-                  </h3>
-                  <p className="text-sm text-stone-700 mt-1">
-                    {PRACTICE_INFO.address.line1}, {PRACTICE_INFO.address.town}
-                  </p>
-                  <p className="text-sm font-medium text-stone-900">
-                    {PRACTICE_INFO.address.city}, {PRACTICE_INFO.address.postcode}
-                  </p>
+            <div className="bg-stone-50 rounded-2xl overflow-hidden border border-stone-200">
+              <div className="relative aspect-16/9 w-full overflow-hidden">
+                <img
+                  src={PRACTICE_INFO.images.room2}
+                  alt="Talk Aid Counselling Services quiet room in Oadby"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-2 left-3 text-white text-[11px] font-medium">
+                  Peaceful, confidential therapy setting in Oadby
                 </div>
               </div>
+
+              <div className="p-5 sm:p-6">
+                <div className="flex items-start gap-3.5 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-800 text-white flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-stone-900 text-base font-serif-display">
+                      {PRACTICE_INFO.name}
+                    </h3>
+                    <p className="text-xs text-emerald-800 font-medium">
+                      {PRACTICE_INFO.practitionerName} · Registered Member MBACP
+                    </p>
+                    <p className="text-sm text-stone-700 mt-1">
+                      {PRACTICE_INFO.address.line1}, {PRACTICE_INFO.address.town}
+                    </p>
+                    <p className="text-sm font-medium text-stone-900">
+                      {PRACTICE_INFO.address.city}, {PRACTICE_INFO.address.postcode}
+                    </p>
+                  </div>
+                </div>
 
               <div className="space-y-3.5 text-xs text-stone-600 border-t border-stone-200 pt-4">
                 <div className="flex items-start gap-2.5">
@@ -77,6 +93,7 @@ export const LocalSeoSection: React.FC = () => {
                 </div>
               </div>
             </div>
+          </div>
 
             {/* Nationwide Online Therapy Box */}
             <div className="bg-emerald-900/5 rounded-2xl p-6 border border-emerald-900/15 flex items-start gap-3.5">

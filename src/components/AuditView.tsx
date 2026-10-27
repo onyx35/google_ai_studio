@@ -63,10 +63,25 @@ export const AuditView: React.FC<AuditViewProps> = ({ onSwitchToWebsite, onOpenB
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-800/30 rounded-full blur-3xl pointer-events-none" />
           
           <div className="relative z-10">
-            <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
-              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-300">
-                <Sparkles className="w-4 h-4" /> Practice Diagnostic & SEO Strategy
+            <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-2 rounded-xl inline-block shadow-xs">
+                  <img
+                    src="/images/logo.png"
+                    alt="Talk Aid Counselling Services Logo"
+                    className="h-10 w-auto object-contain"
+                  />
+                </div>
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-300 block">
+                    Practice Diagnostic & SEO Blueprint
+                  </span>
+                  <span className="text-sm font-medium text-stone-200">
+                    Raksha Patel · Registered Member MBACP
+                  </span>
+                </div>
               </div>
+
               <div className="flex items-center gap-2">
                 <button
                   onClick={handlePrint}
