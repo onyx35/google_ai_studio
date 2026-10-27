@@ -29,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
             <span className="text-stone-700/60 hidden sm:inline" aria-hidden="true">·</span>
             <span className="text-stone-900 font-medium hidden sm:inline">
-              Oadby, Leicester (In-Person) & UK-Wide (Online Video)
+              Leicester (In-Person) & Globally Online
             </span>
           </div>
 
@@ -104,7 +104,6 @@ export const Header: React.FC<HeaderProps> = ({
                 <a href="#services" className="hover:text-stone-900 transition-colors">Services</a>
                 <a href="#specialties" className="hover:text-stone-900 transition-colors">Issues</a>
                 <a href="#quiz" className="hover:text-stone-900 transition-colors">Self-Quiz</a>
-                <a href="#testimonials" className="hover:text-stone-900 transition-colors">Stories</a>
                 <a href="#fees" className="hover:text-stone-900 transition-colors">Fees</a>
                 <a href="#location" className="hover:text-stone-900 transition-colors">Oadby & Map</a>
                 <a href="#faqs" className="hover:text-stone-900 transition-colors">FAQs</a>
@@ -195,13 +194,6 @@ export const Header: React.FC<HeaderProps> = ({
               className="py-1.5 px-2 hover:bg-stone-50 rounded-lg"
             >
               Self-Assessment Quiz
-            </a>
-            <a 
-              href="#testimonials" 
-              onClick={() => setMobileMenuOpen(false)}
-              className="py-1.5 px-2 hover:bg-stone-50 rounded-lg"
-            >
-              Client Stories & Reviews
             </a>
             <a 
               href="#fees" 

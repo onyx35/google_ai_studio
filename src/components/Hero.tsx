@@ -61,10 +61,10 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
               <button
                 onClick={onOpenBooking}
-                className="py-3.5 px-6 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-semibold text-sm transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
+                className="py-3.5 px-6 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all shadow-xs border border-[#9eb05b]/60 flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Request Free 15-Minute Intro Call</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 text-stone-950" />
               </button>
 
               <button
@@ -78,22 +78,22 @@ export const Hero: React.FC<HeroProps> = ({
 
             {/* Unboxed Trust Signals */}
             {/* Trust Directory Badges directly from talkaid website */}
-            <div className="pt-6 border-t border-stone-200">
-              <p className="text-[11px] font-bold uppercase tracking-wider text-stone-500 mb-3">
+            <div className="pt-6 border-t border-stone-200 w-full">
+              <p className="text-xs font-bold uppercase tracking-wider text-stone-600 mb-3.5">
                 Verified Professional Registrations:
               </p>
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full">
                 <a
                   href={PRACTICE_INFO.verificationLinks.bacp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center gap-2"
+                  className="p-3.5 sm:p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs"
                   title="View BACP Registered Member Profile"
                 >
                   <img
                     src={PRACTICE_INFO.images.bacpBadge}
                     alt="BACP Registered Member"
-                    className="h-8 w-auto object-contain"
+                    className="max-h-14 sm:max-h-16 w-auto max-w-[90%] object-contain transition-transform group-hover:scale-105"
                   />
                 </a>
 
@@ -101,13 +101,13 @@ export const Hero: React.FC<HeroProps> = ({
                   href={PRACTICE_INFO.verificationLinks.psychologyToday}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center gap-2"
+                  className="p-3.5 sm:p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs"
                   title="View Psychology Today Verified Profile"
                 >
                   <img
                     src={PRACTICE_INFO.images.psychologyToday}
                     alt="Psychology Today Verified"
-                    className="h-8 w-auto object-contain"
+                    className="max-h-14 sm:max-h-16 w-auto max-w-[90%] object-contain transition-transform group-hover:scale-105"
                   />
                 </a>
 
@@ -115,13 +115,13 @@ export const Hero: React.FC<HeroProps> = ({
                   href={PRACTICE_INFO.verificationLinks.counsellingDirectory}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center gap-2"
+                  className="p-3.5 sm:p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs"
                   title="View Counselling Directory Profile"
                 >
                   <img
                     src={PRACTICE_INFO.images.counsellingDirectory}
                     alt="Counselling Directory Verified"
-                    className="h-8 w-auto object-contain"
+                    className="max-h-14 sm:max-h-16 w-auto max-w-[90%] object-contain transition-transform group-hover:scale-105"
                   />
                 </a>
               </div>
@@ -131,8 +131,8 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Right Card: Genuine Consulting Room Photo & Reassurance */}
           <div className="lg:col-span-5">
             <div className="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/90 shadow-sm relative">
-              {/* Therapy Practice Image from Website - Complete Circle */}
-              <div className="relative rounded-full overflow-hidden mb-4 border-4 border-stone-100 shadow-sm aspect-square w-48 h-48 sm:w-56 sm:h-56 mx-auto group bg-stone-100">
+              {/* Therapy Practice Image from Website - Complete Circle (Twice as Big) */}
+              <div className="relative rounded-full overflow-hidden mb-5 border-4 border-stone-100 shadow-md aspect-square w-80 h-80 sm:w-96 sm:h-96 max-w-full mx-auto group bg-stone-100">
                 <img
                   src={PRACTICE_INFO.images.teamIndex}
                   alt="Talk Aid Counselling Services"

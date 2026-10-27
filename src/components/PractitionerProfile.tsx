@@ -8,8 +8,7 @@ export const PractitionerProfile: React.FC = () => {
   const roomPhotos = [
     { src: PRACTICE_INFO.images.room1, title: 'Main Consulting Area', subtitle: 'Calm, comfortable armchairs' },
     { src: PRACTICE_INFO.images.room2, title: 'Confidential Space', subtitle: 'Private, quiet room in Oadby' },
-    { src: PRACTICE_INFO.images.room3, title: 'Therapeutic Corner', subtitle: 'Tranquil & unhurried setting' },
-    { src: '/images/gal-1.jpeg', title: 'Serene Environment', subtitle: 'Surrounded by peaceful greenery' }
+    { src: PRACTICE_INFO.images.room3, title: 'Therapeutic Corner', subtitle: 'Tranquil & unhurried setting' }
   ];
 
   return (
@@ -116,7 +115,7 @@ export const PractitionerProfile: React.FC = () => {
               </div>
 
               {/* Thumbnail Strip */}
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-3 gap-2">
                 {roomPhotos.map((photo, idx) => (
                   <button
                     key={idx}
