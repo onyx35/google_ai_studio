@@ -131,22 +131,24 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Right Card: Genuine Consulting Room Photo & Reassurance */}
           <div className="lg:col-span-5">
             <div className="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/90 shadow-sm relative">
-              {/* Actual Therapy Room Photograph from Website */}
-              <div className="relative rounded-2xl overflow-hidden mb-5 border border-stone-200/80 aspect-4/3 group">
+              {/* Therapy Practice Image from Website - Complete Circle */}
+              <div className="relative rounded-full overflow-hidden mb-4 border-4 border-stone-100 shadow-sm aspect-square w-48 h-48 sm:w-56 sm:h-56 mx-auto group bg-stone-100">
                 <img
-                  src={PRACTICE_INFO.images.room1}
-                  alt="Talk Aid Consulting Room in Oadby, Leicester"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
+                  src={PRACTICE_INFO.images.teamIndex}
+                  alt="Talk Aid Counselling Services"
+                  className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent" />
-                <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300 block">
-                    The Talk Aid Consulting Room
-                  </span>
-                  <p className="text-xs font-medium text-stone-100">
-                    19 Highcroft Avenue, Oadby · Discreet, quiet & comfortable
-                  </p>
-                </div>
+              </div>
+              <div className="text-center mb-5">
+                <h3 className="font-bold text-stone-900 text-sm font-serif-display">
+                  Raksha Patel
+                </h3>
+                <p className="text-xs text-emerald-800 font-semibold mt-0.5">
+                  Talk Aid Counselling Services · MBACP
+                </p>
+                <p className="text-[11px] text-stone-500">
+                  19 Highcroft Avenue, Oadby, Leicester & Online UK
+                </p>
               </div>
 
               {/* Service Quick-Select preview */}
