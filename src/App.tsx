@@ -21,7 +21,7 @@ import { Phone, Calendar, Sparkles } from 'lucide-react';
 import { PRACTICE_INFO } from './data/counsellingData';
 
 export default function App() {
-  const [activeView, setActiveView] = useState<'website' | 'growth-audit'>('growth-audit');
+  const [activeView, setActiveView] = useState<'website' | 'growth-audit'>('website');
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isCrisisModalOpen, setIsCrisisModalOpen] = useState(false);
   const [preselectedService, setPreselectedService] = useState<string>('adult-counselling');

@@ -19,22 +19,7 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-emerald-50/70 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-stone-200/50 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 relative z-10">
-        {/* Top suggestion bar pointing to audit */}
-        <div className="mb-6 inline-flex items-center gap-2 p-1 pl-3 pr-2 bg-emerald-900/5 border border-emerald-800/15 rounded-full text-xs text-emerald-900">
-          <span className="font-semibold">Practice Growth Notice:</span>
-          <span className="text-stone-600 hidden sm:inline">
-            We analyzed your existing website (talkaidcounsellingservices.co.uk)
-          </span>
-          <button
-            onClick={onSwitchToAudit}
-            className="inline-flex items-center gap-1 font-semibold text-emerald-800 hover:text-emerald-950 underline underline-offset-2 ml-1"
-          >
-            <span>View Full SEO & Client Audit</span>
-            <ArrowRight className="w-3 h-3" />
-          </button>
-        </div>
-
+      <div className="max-w-6xl mx-auto px-4 relative z-10 pt-4 sm:pt-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Main Left Content */}
           <div className="lg:col-span-7">
@@ -49,7 +34,7 @@ export const Hero: React.FC<HeroProps> = ({
               <span>Oadby, Leicester & Online UK</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-stone-900 font-serif-display leading-[1.12] mb-6">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-normal tracking-tight text-stone-900 font-serif-display leading-[1.25] mb-4">
               A calm, confidential space to <span className="italic font-medium text-emerald-900">heal</span>, understand yourself, and move forward.
             </h1>
 
@@ -146,32 +131,6 @@ export const Hero: React.FC<HeroProps> = ({
                 <p className="text-xs text-emerald-800 font-semibold mt-0.5">
                   Talkaid Counselling Services · MBACP
                 </p>
-                <p className="text-[11px] text-stone-500">
-                  19 Highcroft Avenue, Oadby, Leicester & Online UK
-                </p>
-              </div>
-
-              {/* Service Quick-Select preview */}
-              <div className="space-y-2.5 mb-5">
-                <div className="p-3 rounded-xl bg-stone-50 border border-stone-100 hover:border-emerald-200 transition-colors">
-                  <div className="flex justify-between items-baseline mb-0.5">
-                    <span className="font-semibold text-xs sm:text-sm text-stone-900">Adult 1-to-1 Psychotherapy</span>
-                    <span className="text-xs font-semibold text-emerald-800">£60 – £90</span>
-                  </div>
-                  <p className="text-[11px] text-stone-500">
-                    Anxiety, depression, trauma, PTSD, grief & burnout support.
-                  </p>
-                </div>
-
-                <div className="p-3 rounded-xl bg-stone-50 border border-stone-100 hover:border-emerald-200 transition-colors">
-                  <div className="flex justify-between items-baseline mb-0.5">
-                    <span className="font-semibold text-xs sm:text-sm text-stone-900">Couples & Relationship Counselling</span>
-                    <span className="text-xs font-semibold text-emerald-800">£90</span>
-                  </div>
-                  <p className="text-[11px] text-stone-500">
-                    De-escalating conflict, rebuilding trust & intimacy.
-                  </p>
-                </div>
               </div>
 
               {/* Location options */}

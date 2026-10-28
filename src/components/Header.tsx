@@ -55,51 +55,22 @@ export const Header: React.FC<HeaderProps> = ({
       </div>
 
       {/* Main Navigation */}
-      <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto px-4 py-1.5 sm:py-2 flex items-center justify-between gap-4">
         {/* Brand */}
-        <div className="flex items-center w-1/2 max-w-[50%] shrink-0">
-          <a href="#home" className="group flex items-center w-full">
+        <div className="flex items-center shrink-0">
+          <a href="#home" className="group flex items-center">
             <img
               src={PRACTICE_INFO.images.logo}
               alt="Talkaid Counselling Services Logo"
-              className="w-full sm:w-[48vw] md:w-[46vw] max-w-[480px] h-auto object-contain transition-transform group-hover:scale-[1.01]"
+              className="w-auto h-auto max-w-[240px] max-h-14 sm:max-h-16 object-contain transition-transform group-hover:scale-[1.01]"
             />
           </a>
         </div>
 
-        {/* Center Mode Switcher (Website View vs Growth Audit View) */}
-        <div className="hidden lg:flex items-center p-1 bg-stone-100 rounded-xl border border-stone-200">
-          <button
-            onClick={() => setActiveView('website')}
-            className={`flex items-center gap-2 py-1.5 px-3.5 rounded-lg text-xs font-semibold transition-all ${
-              activeView === 'website'
-                ? 'bg-white text-stone-900 shadow-xs'
-                : 'text-stone-600 hover:text-stone-900'
-            }`}
-          >
-            <Layout className="w-3.5 h-3.5 text-emerald-700" />
-            <span>Enhanced Practice Website</span>
-          </button>
-          <button
-            onClick={() => setActiveView('growth-audit')}
-            className={`flex items-center gap-2 py-1.5 px-3.5 rounded-lg text-xs font-semibold transition-all ${
-              activeView === 'growth-audit'
-                ? 'bg-emerald-900 text-white shadow-xs'
-                : 'text-stone-600 hover:text-stone-900'
-            }`}
-          >
-            <Sparkles className="w-3.5 h-3.5 text-emerald-300" />
-            <span>Web Visibility & SEO Strategy</span>
-            <span className="bg-emerald-700 text-emerald-100 text-[10px] px-1.5 py-0.2 rounded font-mono">
-              Action Plan
-            </span>
-          </button>
-        </div>
-
         {/* Right Action */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-4 ml-auto">
           {activeView === 'website' ? (
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <nav className="flex items-center gap-5 text-xs font-medium text-stone-600 mr-2">
                 <a href="#services" className="hover:text-stone-900 transition-colors">Services</a>
                 <a href="#specialties" className="hover:text-stone-900 transition-colors">Issues</a>
@@ -111,15 +82,15 @@ export const Header: React.FC<HeaderProps> = ({
 
               <button
                 onClick={() => onOpenBooking()}
-                className="py-2 px-4 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-semibold transition-all shadow-xs flex items-center gap-1.5 cursor-pointer"
+                className="py-2 px-4 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-xs transition-all shadow-xs border border-[#9eb05b]/60 inline-flex items-center justify-center shrink-0 whitespace-nowrap cursor-pointer"
               >
-                <span>Free 15-Min Intro</span>
+                <span className="whitespace-nowrap">Free 15-Min Intro</span>
               </button>
             </div>
           ) : (
             <button
               onClick={() => setActiveView('website')}
-              className="py-2 px-4 rounded-xl border border-stone-300 hover:bg-stone-50 text-stone-700 text-xs font-semibold transition-colors flex items-center gap-1.5"
+              className="py-2 px-4 rounded-xl border border-stone-300 hover:bg-stone-50 text-stone-700 text-xs font-semibold transition-colors flex items-center gap-1.5 whitespace-nowrap"
             >
               <Compass className="w-3.5 h-3.5 text-stone-500" />
               <span>Preview Live Client Site</span>
@@ -128,13 +99,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Mobile menu trigger */}
-        <div className="flex items-center gap-2 lg:hidden">
-          <button
-            onClick={() => setActiveView(activeView === 'website' ? 'growth-audit' : 'website')}
-            className="text-xs px-2.5 py-1.5 rounded-lg bg-stone-100 font-medium text-stone-800"
-          >
-            {activeView === 'website' ? 'View SEO Audit' : 'View Website'}
-          </button>
+        <div className="flex items-center gap-2 lg:hidden ml-auto">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 text-stone-600 hover:text-stone-900 rounded-lg hover:bg-stone-100"
