@@ -68,7 +68,7 @@ export const AuditView: React.FC<AuditViewProps> = ({ onSwitchToWebsite, onOpenB
                 <div className="bg-white p-2 rounded-xl inline-block shadow-xs">
                   <img
                     src="/images/logo.png"
-                    alt="Talk Aid Counselling Services Logo"
+                    alt="Talkaid Counselling Services Logo"
                     className="h-10 w-auto object-contain"
                   />
                 </div>
@@ -104,7 +104,7 @@ export const AuditView: React.FC<AuditViewProps> = ({ onSwitchToWebsite, onOpenB
               Web Visibility & Client Acquisition Blueprint
             </h1>
             <p className="text-stone-300 text-sm sm:text-base max-w-3xl leading-relaxed mb-8">
-              Prepared for <span className="text-white font-semibold">Talk Aid Counselling Services</span> (<span className="text-emerald-300 font-mono text-xs">{AUDIT_SUMMARY.currentUrl}</span>). Below is your step-by-step roadmap to achieve top Google rankings in Leicester, establish unwavering client trust, and fill your caseload.
+              Prepared for <span className="text-white font-semibold">Talkaid Counselling Services</span> (<span className="text-emerald-300 font-mono text-xs">{AUDIT_SUMMARY.currentUrl}</span>). Below is your step-by-step roadmap to achieve top Google rankings in Leicester, establish unwavering client trust, and fill your caseload.
             </p>
 
             {/* Scorecard Grid */}
@@ -521,7 +521,7 @@ ${JSON.stringify(GENERATED_SCHEMA_JSON, null, 2)}
                       Traditional Clinical Phrasing:
                     </span>
                     <p className="text-stone-600 italic">
-                      &quot;Welcome to Talk Aid Counselling Services. I am a qualified integrative psychotherapist offering talking therapy in Oadby.&quot;
+                      &quot;Welcome to Talkaid Counselling Services. I am a qualified integrative psychotherapist offering talking therapy in Oadby.&quot;
                     </p>
                     <p className="text-[11px] text-stone-500 mt-2">
                       Focus is entirely on the therapist; offers no emotional mirror for the client&apos;s pain.
@@ -613,7 +613,7 @@ ${JSON.stringify(GENERATED_SCHEMA_JSON, null, 2)}
             Experience these recommendations in action
           </h3>
           <p className="text-stone-600 text-sm max-w-xl mx-auto mb-6">
-            We built a complete, production-grade redesign of Talk Aid Counselling Services implementing every single SEO, conversion, and trust principle outlined above.
+            We built a complete, production-grade redesign of Talkaid Counselling Services implementing every single SEO, conversion, and trust principle outlined above.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <button

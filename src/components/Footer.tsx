@@ -23,13 +23,13 @@ export const Footer: React.FC<FooterProps> = ({
               <div className="bg-white p-2 rounded-xl inline-block shadow-xs">
                 <img
                   src={PRACTICE_INFO.images.logo}
-                  alt="Talk Aid Counselling Services Logo"
+                  alt="Talkaid Counselling Services Logo"
                   className="h-10 w-auto object-contain"
                 />
               </div>
               <div>
                 <span className="text-base font-bold text-white font-serif-display block">
-                  Talk Aid Counselling
+                  Talkaid Counselling
                 </span>
                 <span className="text-xs text-stone-400">
                   {PRACTICE_INFO.practitionerName} · MBACP
@@ -187,7 +187,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Credits & Copyright */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-stone-400 text-[11px]">
           <div>
-            &copy; {new Date().getFullYear()} Talk Aid Counselling Services. All rights reserved. Registered Member MBACP.
+            &copy; {new Date().getFullYear()} Talkaid Counselling Services. All rights reserved. Registered Member MBACP.
           </div>
           <div className="flex items-center gap-4">
             <span>Confidentiality Charter</span>

@@ -35,7 +35,7 @@ export const CrisisModal: React.FC<CrisisModalProps> = ({ isOpen, onClose }) => 
         </div>
 
         <p className="text-sm text-stone-600 mb-5 leading-relaxed">
-          Talk Aid Counselling Services is an outpatient practice and does not offer an acute 24-hour crisis line. If you, or someone you know, is in immediate distress or at risk of harm, please contact these services immediately:
+          Talkaid Counselling Services is an outpatient practice and does not offer an acute 24-hour crisis line. If you, or someone you know, is in immediate distress or at risk of harm, please contact these services immediately:
         </p>
 
         <div className="space-y-3 mb-6">

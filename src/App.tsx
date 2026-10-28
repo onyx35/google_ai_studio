@@ -65,7 +65,7 @@ export default function App() {
           />
         ) : (
           <div>
-            {/* Live Enhanced Website for Talk Aid Counselling Services */}
+            {/* Live Enhanced Website for Talkaid Counselling Services */}
             <Hero
               onOpenBooking={() => handleOpenBooking()}
               onExploreQuiz={handleScrollToQuiz}

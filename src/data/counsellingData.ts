@@ -28,8 +28,8 @@ export interface FAQItem {
 }
 
 export const PRACTICE_INFO = {
-  name: "Talk Aid Counselling Services",
-  shortName: "Talk Aid",
+  name: "Talkaid Counselling Services",
+  shortName: "Talkaid",
   practitionerName: "Raksha Patel",
   practitionerTitle: "Qualified Counsellor, Psychotherapist & Clinical Supervisor (MBACP)",
   logoUrl: "/images/logo.png",

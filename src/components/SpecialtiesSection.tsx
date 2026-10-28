@@ -26,7 +26,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
               You don&apos;t have to carry this alone.
             </h2>
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-              Therapy at Talk Aid is grounded in compassionate, paced integrative practice. Explore the common challenges we support clients through each week.
+              Therapy at Talkaid is grounded in compassionate, paced integrative practice. Explore the common challenges we support clients through each week.
             </p>
           </div>
 

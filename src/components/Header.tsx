@@ -61,7 +61,7 @@ export const Header: React.FC<HeaderProps> = ({
           <a href="#home" className="group flex items-center w-full">
             <img
               src={PRACTICE_INFO.images.logo}
-              alt="Talk Aid Counselling Services Logo"
+              alt="Talkaid Counselling Services Logo"
               className="w-full sm:w-[48vw] md:w-[46vw] max-w-[480px] h-auto object-contain transition-transform group-hover:scale-[1.01]"
             />
           </a>

@@ -135,7 +135,7 @@ export const Hero: React.FC<HeroProps> = ({
               <div className="relative rounded-full overflow-hidden mb-5 border-4 border-stone-100 shadow-md aspect-square w-80 h-80 sm:w-96 sm:h-96 max-w-full mx-auto group bg-stone-100">
                 <img
                   src={PRACTICE_INFO.images.teamIndex}
-                  alt="Talk Aid Counselling Services"
+                  alt="Talkaid Counselling Services"
                   className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
@@ -144,7 +144,7 @@ export const Hero: React.FC<HeroProps> = ({
                   Raksha Patel
                 </h3>
                 <p className="text-xs text-emerald-800 font-semibold mt-0.5">
-                  Talk Aid Counselling Services · MBACP
+                  Talkaid Counselling Services · MBACP
                 </p>
                 <p className="text-[11px] text-stone-500">
                   19 Highcroft Avenue, Oadby, Leicester & Online UK

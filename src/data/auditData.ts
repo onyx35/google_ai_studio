@@ -35,7 +35,7 @@ export const AUDIT_SUMMARY = {
   conversionScore: 45, // out of 100
   mobileScore: 55, // out of 100
   contentDepthScore: 50, // out of 100
-  summaryQuote: "Talk Aid Counselling has strong clinical fundamentals (BACP registration, diverse specialisms, transparent pricing), but the existing website suffers from critical visibility barriers: serving over unencrypted HTTP, lacking LocalBusiness Schema, missing condition-focused search landing pages, and lacking a low-friction online inquiry flow."
+  summaryQuote: "Talkaid Counselling has strong clinical fundamentals (BACP registration, diverse specialisms, transparent pricing), but the existing website suffers from critical visibility barriers: serving over unencrypted HTTP, lacking LocalBusiness Schema, missing condition-focused search landing pages, and lacking a low-friction online inquiry flow."
 };
 
 export const AUDIT_ISSUES: AuditIssue[] = [
@@ -108,7 +108,7 @@ export const TOP_KEYWORDS: KeywordOpportunity[] = [
     monthlyUKVolume: "390 searches/mo",
     competition: "Low",
     targetPage: "Homepage & Location Footer",
-    recommendation: "Include in H1/H2 and Meta Title: 'Talk Aid Counselling | BACP Counsellor in Oadby & Leicester'."
+    recommendation: "Include in H1/H2 and Meta Title: 'Talkaid Counselling | BACP Counsellor in Oadby & Leicester'."
   },
   {
     keyword: "anxiety counselling leicester",
@@ -168,7 +168,7 @@ export const DIRECTORY_PLAYBOOK: DirectoryRoadmapItem[] = [
     whyItMatters: "Directly powers the Google Maps Local 3-Pack when anyone within 15 miles searches 'counsellor near me'.",
     setupTips: [
       "Select Primary Category: 'Psychotherapist' or 'Counselor'. Secondary: 'Mental Health Clinic'.",
-      "Exact match NAP: Name 'Talk Aid Counselling Services', Address '19 Highcroft Ave, Oadby, Leicester LE2 5UH', Phone '07983 680550'.",
+      "Exact match NAP: Name 'Talkaid Counselling Services', Address '19 Highcroft Ave, Oadby, Leicester LE2 5UH', Phone '07983 680550'.",
       "Add photos of the calm, comfortable interior therapy room and exterior parking.",
       "List all individual services with accurate session rates (£60 – £90)."
     ],
@@ -225,8 +225,8 @@ export const DIRECTORY_PLAYBOOK: DirectoryRoadmapItem[] = [
 export const GENERATED_SCHEMA_JSON = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
-  "name": "Talk Aid Counselling Services",
-  "alternateName": "Talk Aid Counselling Oadby Leicester",
+  "name": "Talkaid Counselling Services",
+  "alternateName": "Talkaid Counselling Oadby Leicester",
   "description": "Professional confidential counselling, psychotherapy, and clinical supervision for adults, couples, and young people in Oadby, Leicester and online across the UK. Registered Member MBACP.",
   "url": "http://www.talkaidcounsellingservices.co.uk/",
   "telephone": "+44-7983-680550",
