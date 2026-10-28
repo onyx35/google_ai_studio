@@ -1,33 +1,16 @@
 import React, { useState } from 'react';
-import { PRACTICE_INFO, SERVICES } from '../data/counsellingData';
-import { Clock, Shield, CheckCircle, Calculator, CreditCard, Send, Lock } from 'lucide-react';
+import { PRACTICE_INFO } from '../data/counsellingData';
+import { Shield, CheckCircle, CreditCard, Send, Lock } from 'lucide-react';
 
 interface FeesAndBookingProps {
   onOpenBookingModal: (serviceId?: string) => void;
 }
 
 export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingModal }) => {
-  const [selectedService, setSelectedService] = useState('adult-counselling');
-  const [frequency, setFrequency] = useState<'weekly' | 'fortnightly'>('weekly');
   const [submittedInline, setSubmittedInline] = useState(false);
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
   const [details, setDetails] = useState('');
-
-  // Fee calculation helper
-  const getBaseFee = (serviceId: string): number => {
-    switch (serviceId) {
-      case 'young-people': return 60;
-      case 'couples-therapy': return 90;
-      case 'clinical-supervision': return 70;
-      case 'adult-counselling':
-      default: return 75; // midpoint of 60-90
-    }
-  };
-
-  const perSession = getBaseFee(selectedService);
-  const sessionsPerMonth = frequency === 'weekly' ? 4 : 2;
-  const monthlyEstimate = perSession * sessionsPerMonth;
 
   const handleInlineSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -104,72 +87,6 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
               <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2 text-xs text-stone-500">
                 <CreditCard className="w-3.5 h-3.5 text-stone-400" />
                 <span>Payment accepted via online bank transfer or major debit/credit card. Invoices available for employer wellbeing schemes.</span>
-              </div>
-            </div>
-
-            {/* Interactive Monthly Budget Estimator */}
-            <div className="bg-white rounded-2xl p-6 border border-stone-200/90 shadow-2xs">
-              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-800 mb-2">
-                <Calculator className="w-4 h-4" /> Therapy Budget Estimator
-              </div>
-              <h4 className="text-base font-bold text-stone-900 font-serif-display mb-4">
-                Plan your investment
-              </h4>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                  <label className="block text-xs font-semibold text-stone-700 mb-1">
-                    Select Service
-                  </label>
-                  <select
-                    value={selectedService}
-                    onChange={(e) => setSelectedService(e.target.value)}
-                    className="w-full text-xs rounded-xl border border-stone-300 py-2 px-3 bg-white text-stone-800 focus:outline-hidden focus:border-emerald-700"
-                  >
-                    {SERVICES.map(s => (
-                      <option key={s.id} value={s.id}>{s.title}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-stone-700 mb-1">
-                    Typical Cadence
-                  </label>
-                  <div className="grid grid-cols-2 gap-1.5 p-1 bg-stone-100 rounded-xl">
-                    <button
-                      type="button"
-                      onClick={() => setFrequency('weekly')}
-                      className={`py-1.5 px-2 rounded-lg text-xs font-medium transition-all ${
-                        frequency === 'weekly' ? 'bg-white text-stone-900 shadow-2xs font-semibold' : 'text-stone-600'
-                      }`}
-                    >
-                      Weekly (x4/mo)
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setFrequency('fortnightly')}
-                      className={`py-1.5 px-2 rounded-lg text-xs font-medium transition-all ${
-                        frequency === 'fortnightly' ? 'bg-white text-stone-900 shadow-2xs font-semibold' : 'text-stone-600'
-                      }`}
-                    >
-                      Fortnightly (x2/mo)
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-emerald-50/70 border border-emerald-100 flex items-center justify-between">
-                <div>
-                  <p className="text-xs text-stone-600">Estimated Monthly Commitment:</p>
-                  <p className="text-xs text-stone-500">Based on ~£{perSession}/session ({frequency})</p>
-                </div>
-                <div className="text-right">
-                  <span className="text-2xl font-bold text-emerald-950 font-serif-display">
-                    ~£{monthlyEstimate}
-                  </span>
-                  <span className="text-xs text-stone-500 block">per month</span>
-                </div>
               </div>
             </div>
           </div>

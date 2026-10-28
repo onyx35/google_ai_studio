@@ -14,15 +14,15 @@ export const Hero: React.FC<HeroProps> = ({
   onSwitchToAudit
 }) => {
   return (
-    <section id="home" className="relative pt-12 pb-16 md:pt-18 md:pb-24 overflow-hidden bg-stone-50 border-b border-stone-200">
+    <section id="home" className="relative pt-4 sm:pt-6 pb-14 md:pb-20 overflow-hidden bg-stone-50 border-b border-stone-200">
       {/* Subtle organic background accent */}
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-emerald-50/70 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-stone-200/50 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 relative z-10 pt-4 sm:pt-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-10 items-center">
           {/* Main Left Content */}
-          <div className="lg:col-span-7">
+          <div className="md:col-span-7">
             {/* Clean unboxed metadata separator */}
             <div className="flex items-center flex-wrap gap-2 text-xs text-stone-600 mb-4 font-medium">
               <span className="flex items-center gap-1 text-emerald-800 font-semibold">
@@ -54,11 +54,19 @@ export const Hero: React.FC<HeroProps> = ({
 
               <button
                 onClick={onExploreQuiz}
-                className="py-3.5 px-5 rounded-xl border border-stone-300 bg-white hover:bg-stone-50 text-stone-800 font-medium text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs"
+                className="py-3.5 px-5 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs border border-[#9eb05b]/60"
               >
-                <Sparkles className="w-4 h-4 text-emerald-700" />
+                <Sparkles className="w-4 h-4 text-stone-950" />
                 <span>60-Second Therapy Fit Quiz</span>
               </button>
+            </div>
+
+            {/* Friendly reassurance micro-note */}
+            <div className="flex items-center gap-2.5 text-xs text-stone-700 mb-6 bg-white/90 border border-[#b4c271]/30 rounded-xl p-3 max-w-xl shadow-2xs">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#b4c271] shrink-0" />
+              <p>
+                <strong className="text-stone-950 font-semibold">Take all the time you need.</strong> Free 15-minute introductory chats are completely informal—an unhurried chance to say hello and see how you feel.
+              </p>
             </div>
 
             {/* Unboxed Trust Signals */}
@@ -114,10 +122,10 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           {/* Right Card: Genuine Consulting Room Photo & Reassurance */}
-          <div className="lg:col-span-5">
+          <div className="md:col-span-5">
             <div className="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/90 shadow-sm relative">
-              {/* Therapy Practice Image from Website - Complete Circle (Twice as Big) */}
-              <div className="relative rounded-full overflow-hidden mb-5 border-4 border-stone-100 shadow-md aspect-square w-80 h-80 sm:w-96 sm:h-96 max-w-full mx-auto group bg-stone-100">
+              {/* Therapy Practice Image from Website - Complete Circle */}
+              <div className="relative rounded-full overflow-hidden mb-5 border-4 border-stone-100 shadow-md aspect-square w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 max-w-full mx-auto group bg-stone-100">
                 <img
                   src={PRACTICE_INFO.images.teamIndex}
                   alt="Talkaid Counselling Services"
@@ -133,29 +141,17 @@ export const Hero: React.FC<HeroProps> = ({
                 </p>
               </div>
 
-              {/* Location options */}
-              <div className="grid grid-cols-2 gap-2 text-xs text-stone-700 mb-4">
-                <div className="flex items-center gap-1.5 p-2 rounded-lg bg-stone-100/70">
-                  <MapPin className="w-3.5 h-3.5 text-emerald-700 shrink-0" />
-                  <span>Oadby (Free Parking)</span>
-                </div>
-                <div className="flex items-center gap-1.5 p-2 rounded-lg bg-stone-100/70">
-                  <Video className="w-3.5 h-3.5 text-emerald-700 shrink-0" />
-                  <span>Online (Secure Zoom)</span>
-                </div>
-              </div>
-
               {/* Direct Call / Contact Banner */}
-              <div className="bg-emerald-950 text-white rounded-xl p-3.5 flex items-center justify-between gap-3">
+              <div className="bg-[#b4c271] text-stone-950 rounded-2xl p-4 flex items-center justify-between gap-3 border border-[#9eb05b]/60 shadow-xs">
                 <div>
-                  <p className="text-[11px] text-emerald-300 font-medium">Prefer to speak first?</p>
-                  <p className="text-sm font-semibold tracking-tight">{PRACTICE_INFO.phone}</p>
+                  <p className="text-xs text-stone-900 font-medium">Prefer to speak first?</p>
+                  <p className="text-sm font-bold tracking-tight text-stone-950">{PRACTICE_INFO.phone}</p>
                 </div>
                 <a
                   href={`tel:${PRACTICE_INFO.phone.replace(/\s+/g, '')}`}
-                  className="py-2 px-3 rounded-lg bg-emerald-800 hover:bg-emerald-700 text-white text-xs font-semibold transition-colors flex items-center gap-1.5 shrink-0"
+                  className="py-2 px-3.5 rounded-xl bg-stone-900 hover:bg-black text-white text-xs font-semibold transition-colors flex items-center gap-1.5 shrink-0"
                 >
-                  <Phone className="w-3.5 h-3.5" />
+                  <Phone className="w-3.5 h-3.5 text-stone-200" />
                   <span>Call Now</span>
                 </a>
               </div>

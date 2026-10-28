@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { WarmWelcomeSection } from './components/WarmWelcomeSection';
 import { ServicesSection } from './components/ServicesSection';
 import { SpecialtiesSection } from './components/SpecialtiesSection';
 import { TherapyQuiz } from './components/TherapyQuiz';
@@ -73,6 +74,10 @@ export default function App() {
                 setActiveView('growth-audit');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
+            />
+
+            <WarmWelcomeSection
+              onOpenBooking={(serviceId) => handleOpenBooking(serviceId)}
             />
 
             <ServicesSection

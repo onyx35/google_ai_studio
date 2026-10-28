@@ -17,11 +17,11 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
     <section id="services" className="py-16 md:py-24 bg-white border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Header */}
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-4xl mb-12">
           <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Professional Practice Offerings
           </div>
-          <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-4 whitespace-nowrap">
             Therapy tailored to where you are right now.
           </h2>
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
