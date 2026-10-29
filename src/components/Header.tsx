@@ -84,7 +84,7 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => onOpenBooking()}
                 className="py-2 px-4 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-xs transition-all shadow-xs border border-[#9eb05b]/60 inline-flex items-center justify-center shrink-0 whitespace-nowrap cursor-pointer"
               >
-                <span className="whitespace-nowrap">Free 15-Min Intro</span>
+                <span className="whitespace-nowrap">Free 10-Min Intro</span>
               </button>
             </div>
           ) : (
@@ -191,7 +191,7 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className="w-full py-2.5 rounded-xl bg-emerald-800 text-white text-xs font-semibold text-center"
             >
-              Request Free 15-Minute Intro Call
+              Request Free 10-Minute Intro Call
             </button>
             <a
               href={`tel:${PRACTICE_INFO.phone.replace(/\s+/g, '')}`}
