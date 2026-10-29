@@ -76,6 +76,8 @@ export default function App() {
               }}
             />
 
+            <PractitionerProfile />
+
             <WarmWelcomeSection
               onOpenBooking={(serviceId) => handleOpenBooking(serviceId)}
             />
@@ -91,8 +93,6 @@ export default function App() {
             <TherapyQuiz
               onOpenBooking={(serviceId) => handleOpenBooking(serviceId)}
             />
-
-            <PractitionerProfile />
 
             <FeesAndBooking
               onOpenBookingModal={(serviceId) => handleOpenBooking(serviceId)}

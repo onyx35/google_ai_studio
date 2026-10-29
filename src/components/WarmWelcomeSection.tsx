@@ -199,20 +199,6 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                       {item.reassurance}
                     </p>
                   </div>
-
-                  <div className="mt-4 pt-3 border-t border-stone-200/60 flex items-center justify-between text-xs font-semibold text-stone-900">
-                    <span className="text-[11px] text-[#354310]">How we help &rarr;</span>
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onOpenBooking(item.serviceId);
-                      }}
-                      className="text-[11px] underline text-stone-600 hover:text-black cursor-pointer"
-                    >
-                      Talk to Raksha
-                    </button>
-                  </div>
                 </div>
               );
             })}

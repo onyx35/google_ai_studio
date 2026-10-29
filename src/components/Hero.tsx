@@ -20,9 +20,9 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-stone-200/50 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Main Left Content */}
-          <div className="md:col-span-7">
+          <div className="md:col-span-6">
             {/* Clean unboxed metadata separator */}
             <div className="flex items-center flex-wrap gap-2 text-xs text-stone-600 mb-4 font-medium">
               <span className="flex items-center gap-1 text-emerald-800 font-semibold">
@@ -43,86 +43,35 @@ export const Hero: React.FC<HeroProps> = ({
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
+            <div className="flex flex-col items-start gap-3 mb-8 w-full">
               <button
-                onClick={onOpenBooking}
-                className="py-3.5 px-6 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all shadow-xs border border-[#9eb05b]/60 flex items-center justify-center gap-2 cursor-pointer"
+                onClick={onExploreQuiz}
+                className="w-full sm:w-[380px] py-3.5 px-6 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs border border-[#9eb05b]/60 whitespace-nowrap"
               >
-                <span>Request Free 10-Minute Intro Call</span>
-                <ArrowRight className="w-4 h-4 text-stone-950" />
+                <Sparkles className="w-4 h-4 text-stone-950 shrink-0" />
+                <span className="whitespace-nowrap">Questionaire - is therapy right for you?</span>
               </button>
 
               <button
-                onClick={onExploreQuiz}
-                className="py-3.5 px-5 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs border border-[#9eb05b]/60"
+                onClick={onOpenBooking}
+                className="w-full sm:w-[380px] py-3.5 px-6 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all shadow-xs border border-[#9eb05b]/60 flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
               >
-                <Sparkles className="w-4 h-4 text-stone-950" />
-                <span>Questionaire - is therapy right for you?</span>
+                <span className="whitespace-nowrap">Request Free 10-Minute Intro Call</span>
+                <ArrowRight className="w-4 h-4 text-stone-950 shrink-0" />
               </button>
             </div>
 
             {/* Friendly reassurance micro-note */}
-            <div className="flex items-center gap-2.5 text-xs text-stone-700 mb-6 bg-white/90 border border-[#b4c271]/30 rounded-xl p-3 max-w-xl shadow-2xs">
+            <div className="flex items-center gap-2.5 text-xs text-stone-700 bg-white/90 border border-[#b4c271]/30 rounded-xl p-3 max-w-xl shadow-2xs">
               <span className="w-2.5 h-2.5 rounded-full bg-[#b4c271] shrink-0" />
               <p>
                 <strong className="text-stone-950 font-semibold">Take all the time you need.</strong> Free 10-minute introductory chats are completely informal—an unhurried chance to say hello and see how you feel.
               </p>
             </div>
-
-            {/* Unboxed Trust Signals */}
-            {/* Trust Directory Badges directly from talkaid website */}
-            <div className="pt-6 border-t border-stone-200 w-full">
-              <p className="text-xs font-bold uppercase tracking-wider text-stone-600 mb-3.5">
-                Verified Professional Registrations:
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full">
-                <a
-                  href={PRACTICE_INFO.verificationLinks.bacp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3.5 sm:p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs"
-                  title="View BACP Registered Member Profile"
-                >
-                  <img
-                    src={PRACTICE_INFO.images.bacpBadge}
-                    alt="BACP Registered Member"
-                    className="max-h-14 sm:max-h-16 w-auto max-w-[90%] object-contain transition-transform group-hover:scale-105"
-                  />
-                </a>
-
-                <a
-                  href={PRACTICE_INFO.verificationLinks.psychologyToday}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3.5 sm:p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs"
-                  title="View Psychology Today Verified Profile"
-                >
-                  <img
-                    src={PRACTICE_INFO.images.psychologyToday}
-                    alt="Psychology Today Verified"
-                    className="max-h-14 sm:max-h-16 w-auto max-w-[90%] object-contain transition-transform group-hover:scale-105"
-                  />
-                </a>
-
-                <a
-                  href={PRACTICE_INFO.verificationLinks.counsellingDirectory}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3.5 sm:p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs"
-                  title="View Counselling Directory Profile"
-                >
-                  <img
-                    src={PRACTICE_INFO.images.counsellingDirectory}
-                    alt="Counselling Directory Verified"
-                    className="max-h-14 sm:max-h-16 w-auto max-w-[90%] object-contain transition-transform group-hover:scale-105"
-                  />
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Right Card: Genuine Consulting Room Photo & Reassurance */}
-          <div className="md:col-span-5">
+          <div className="md:col-span-6">
             <div className="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/90 shadow-sm relative">
               {/* Therapy Practice Image from Website - Complete Circle */}
               <div className="relative rounded-full overflow-hidden mb-5 border-4 border-stone-100 shadow-md aspect-square w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 max-w-full mx-auto group bg-stone-100">
@@ -156,6 +105,56 @@ export const Hero: React.FC<HeroProps> = ({
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Verified Professional Registrations: Below image div component & extended across full width */}
+        <div className="pt-8 sm:pt-10 mt-8 sm:mt-10 border-t border-stone-200/90 w-full">
+          <p className="text-xs font-bold uppercase tracking-wider text-stone-600 mb-4 text-center sm:text-left">
+            Verified Professional Registrations:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
+            <a
+              href={PRACTICE_INFO.verificationLinks.bacp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3.5 sm:p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs"
+              title="View BACP Registered Member Profile"
+            >
+              <img
+                src={PRACTICE_INFO.images.bacpBadge}
+                alt="BACP Registered Member"
+                className="max-h-14 sm:max-h-16 w-auto max-w-[90%] object-contain transition-transform group-hover:scale-105"
+              />
+            </a>
+
+            <a
+              href={PRACTICE_INFO.verificationLinks.psychologyToday}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3.5 sm:p-4 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs"
+              title="View Psychology Today Verified Profile"
+            >
+              <img
+                src={PRACTICE_INFO.images.psychologyToday}
+                alt="Psychology Today Verified"
+                className="max-h-14 sm:max-h-16 w-auto max-w-[90%] object-contain transition-transform group-hover:scale-105"
+              />
+            </a>
+
+            <a
+              href={PRACTICE_INFO.verificationLinks.counsellingDirectory}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 sm:p-2.5 rounded-2xl bg-white border border-stone-200 hover:border-emerald-700/60 transition-all hover:shadow-xs group flex items-center justify-center h-20 sm:h-24 w-full shadow-2xs overflow-hidden"
+              title="View Counselling Directory Profile"
+            >
+              <img
+                src={PRACTICE_INFO.images.counsellingDirectory}
+                alt="Counselling Directory Verified"
+                className="max-h-[80%] sm:max-h-[85%] w-auto max-w-[98%] scale-[1.35] sm:scale-[1.4] object-contain transition-transform group-hover:scale-[1.45]"
+              />
+            </a>
           </div>
         </div>
       </div>

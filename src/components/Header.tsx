@@ -74,7 +74,7 @@ export const Header: React.FC<HeaderProps> = ({
               <nav className="flex items-center gap-5 text-xs font-medium text-stone-600 mr-2">
                 <a href="#services" className="hover:text-stone-900 transition-colors">Services</a>
                 <a href="#specialties" className="hover:text-stone-900 transition-colors">Issues</a>
-                <a href="#quiz" className="hover:text-stone-900 transition-colors">Self-Quiz</a>
+                <a href="#quiz" className="hover:text-stone-900 transition-colors">Questionaire</a>
                 <a href="#fees" className="hover:text-stone-900 transition-colors">Fees</a>
                 <a href="#location" className="hover:text-stone-900 transition-colors">Oadby & Map</a>
                 <a href="#faqs" className="hover:text-stone-900 transition-colors">FAQs</a>
@@ -158,7 +158,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => setMobileMenuOpen(false)}
               className="py-1.5 px-2 hover:bg-stone-50 rounded-lg"
             >
-              Self-Assessment Quiz
+              Questionaire
             </a>
             <a 
               href="#fees" 

@@ -95,7 +95,9 @@ export const TherapyQuiz: React.FC<TherapyQuizProps> = ({ onOpenBooking }) => {
   }
 
   return (
-    <section id="quiz" className="py-16 md:py-24 bg-stone-100/60 border-b border-stone-200">
+    <section id="quiz" className="py-16 md:py-24 bg-stone-100/60 border-b border-stone-200 scroll-mt-20 relative">
+      <div id="Questionaire" className="absolute -top-20 pointer-events-none" />
+      <div id="questionnaire" className="absolute -top-20 pointer-events-none" />
       <div className="max-w-3xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-10">
