@@ -53,7 +53,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
             You don’t have to carry everything by yourself.
           </h2>
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-            Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.
+          Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
 
               <blockquote className="text-base sm:text-lg text-stone-800 font-serif-display leading-relaxed italic mb-6">
                 &ldquo;People often reach out when they feel they have tried everything else, or when carrying their thoughts alone has simply become too exhausting. 
-                My consulting room is not a cold clinic. It is a quiet, comfortable sanctuary where you can take off the mask, breathe, and speak freely without any fear of judgment.&rdquo;
+                My consulting root is a quiet, comfortable sanctuary where you can take off the mask, breathe, and speak freely without any fear of judgment.&rdquo;
               </blockquote>
 
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
@@ -98,7 +98,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                 onClick={() => onOpenBooking()}
                 className="py-2.5 px-4 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-xs transition-all shadow-xs border border-[#9eb05b]/60 flex items-center gap-1.5 cursor-pointer"
               >
-                <span>Have a Free 15-Min Chat</span>
+                <span>Have a Free 10-Min Chat</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
@@ -119,7 +119,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                   <div>
                     <h5 className="font-semibold text-xs sm:text-sm text-stone-900">Your Pace, Never Rushed</h5>
                     <p className="text-xs text-stone-600 mt-0.5 leading-relaxed">
-                      You share only what you feel ready to share. There are no right or wrong answers, and no interrogation.
+                      Whatever is discussed in the room remains confidential.
                     </p>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                     <CheckCircle2 className="w-3.5 h-3.5" />
                   </div>
                   <div>
-                    <h5 className="font-semibold text-xs sm:text-sm text-stone-900">Quiet, Discreet Oadby Setting</h5>
+                    <h5 className="font-semibold text-xs sm:text-sm text-stone-900">Quiet, Discreet Setting</h5>
                     <p className="text-xs text-stone-600 mt-0.5 leading-relaxed">
                       Free on-street parking directly outside on Highcroft Avenue. Calm armchairs, ambient lighting, and complete privacy.
                     </p>
@@ -167,7 +167,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
         <div className="bg-white rounded-3xl p-6 sm:p-9 border border-stone-200/90 shadow-2xs">
           <div className="max-w-xl mb-6">
             <span className="text-xs font-bold uppercase tracking-wider text-stone-500 block mb-1">
-              Start Where It Hurts Most
+              Where to Start
             </span>
             <h3 className="text-xl sm:text-2xl font-normal text-stone-900 font-serif-display">
               How are you feeling right now?
