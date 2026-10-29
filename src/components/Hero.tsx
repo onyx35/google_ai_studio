@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({
               <span aria-hidden="true">·</span>
               <span>Integrative Psychotherapy</span>
               <span aria-hidden="true">·</span>
-              <span>Oadby, Leicester & Online UK</span>
+              <span>Leicestershire & Online</span>
             </div>
 
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-normal tracking-tight text-stone-900 font-serif-display leading-[1.25] mb-4">
