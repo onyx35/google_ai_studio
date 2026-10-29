@@ -29,7 +29,7 @@ export const Hero: React.FC<HeroProps> = ({
                 <Shield className="w-3.5 h-3.5" /> Registered Member MBACP
               </span>
               <span aria-hidden="true">·</span>
-              <span>Integrative Psychotherapy</span>
+              <span>Counseller & Clinical Supervisor</span>
               <span aria-hidden="true">·</span>
               <span> Leicestershire & Online </span>
             </div>
@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({
             </h1>
 
             <p className="text-base sm:text-lg text-stone-600 font-normal leading-relaxed mb-8 max-w-xl">
-              Professional, compassionate therapy for adults, couples, and adolescents dealing with anxiety, depression, trauma, and life crossroads. Discreet private consulting room in Oadby, Leicester with free parking, plus secure video sessions nationwide.
+              Professional, compassionate therapy for adults, couples, and young people dealing with anxiety, depression, trauma, ADHS, Autism and life crossroads. Discreet private consulting room in Oadby, Leicester with free parking, plus secure video sessions nationwide.
             </p>
 
             {/* CTAs */}
@@ -48,7 +48,7 @@ export const Hero: React.FC<HeroProps> = ({
                 onClick={onOpenBooking}
                 className="py-3.5 px-6 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all shadow-xs border border-[#9eb05b]/60 flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>Request Free 15-Minute Intro Call</span>
+                <span>Request Free 10-Minute Intro Call</span>
                 <ArrowRight className="w-4 h-4 text-stone-950" />
               </button>
 
@@ -57,7 +57,7 @@ export const Hero: React.FC<HeroProps> = ({
                 className="py-3.5 px-5 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs border border-[#9eb05b]/60"
               >
                 <Sparkles className="w-4 h-4 text-stone-950" />
-                <span>60-Second Therapy Fit Quiz</span>
+                <span>Questionaire - is therapy right for you?</span>
               </button>
             </div>
 
@@ -65,7 +65,7 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="flex items-center gap-2.5 text-xs text-stone-700 mb-6 bg-white/90 border border-[#b4c271]/30 rounded-xl p-3 max-w-xl shadow-2xs">
               <span className="w-2.5 h-2.5 rounded-full bg-[#b4c271] shrink-0" />
               <p>
-                <strong className="text-stone-950 font-semibold">Take all the time you need.</strong> Free 15-minute introductory chats are completely informal—an unhurried chance to say hello and see how you feel.
+                <strong className="text-stone-950 font-semibold">Take all the time you need.</strong> Free 10-minute introductory chats are completely informal—an unhurried chance to say hello and see how you feel.
               </p>
             </div>
 

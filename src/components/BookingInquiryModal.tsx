@@ -103,7 +103,7 @@ export const BookingInquiryModal: React.FC<BookingInquiryModalProps> = ({
                 Request a Consultation
               </h2>
               <p className="text-xs text-stone-500 mt-1">
-                Start with a free, no-obligation 15-minute phone call or request your initial session.
+                Start with a free, no-obligation 10-minute phone call or request your initial session.
               </p>
             </div>
 
@@ -118,7 +118,7 @@ export const BookingInquiryModal: React.FC<BookingInquiryModalProps> = ({
                     : 'text-stone-600 hover:text-stone-900'
                 }`}
               >
-                <Clock className="w-3.5 h-3.5 text-emerald-700" /> Free 15-Min Intro Call
+                <Clock className="w-3.5 h-3.5 text-emerald-700" /> Free 10-Min Intro Call
               </button>
               <button
                 type="button"
@@ -276,7 +276,7 @@ export const BookingInquiryModal: React.FC<BookingInquiryModalProps> = ({
                   className="w-full py-3 px-5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-semibold text-sm transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Phone className="w-4 h-4" />
-                  {type === 'free-consultation' ? 'Request Free 15-Minute Intro Call' : 'Submit Consultation Request'}
+                  {type === 'free-consultation' ? 'Request Free 10-Minute Intro Call' : 'Submit Consultation Request'}
                 </button>
               </div>
 

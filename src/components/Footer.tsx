@@ -38,7 +38,7 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
             
             <p className="text-stone-400 text-xs leading-relaxed max-w-sm">
-              Professional, confidential counselling and psychotherapy for adults, couples, and adolescents in Oadby, Leicester and online UK. Providing a safe, non-judgmental space to heal.
+              Professional, confidential counselling and psychotherapy for adults, couples, and young people in Leicestershire and Online. Providing a safe, non-judgmental space to heal.
             </p>
 
             <div className="pt-2 text-[11px] text-stone-400 space-y-1">
@@ -101,7 +101,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li><a href="#services" className="hover:text-white transition-colors">Couples Counselling</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Young People (13-17)</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Clinical Supervision</a></li>
-              <li><a href="#quiz" className="hover:text-white transition-colors">Therapy Fit Quiz</a></li>
+              <li><a href="#Questionaire" className="hover:text-white transition-colors">Therapy Questionnaire</a></li>
               <li><a href="#fees" className="hover:text-white transition-colors">Transparent Fees</a></li>
             </ul>
           </div>
