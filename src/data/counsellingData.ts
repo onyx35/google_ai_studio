@@ -68,7 +68,8 @@ export const PRACTICE_INFO = {
     "Enhanced DBS Checked",
     "Fully Insured for Private Practice",
     "BACP Ethical Framework Compliant",
-    "Regular Clinical Supervision"
+    "Regular Clinical Supervision",
+    "ICO registered (GDPR)"
   ],
   phone: "07983 680550",
   email: "info@talkaidcounsellingservices.co.uk",

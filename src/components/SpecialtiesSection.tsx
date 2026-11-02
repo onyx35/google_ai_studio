@@ -17,27 +17,25 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
     <section id="specialties" className="py-16 md:py-24 bg-stone-50 border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div className="max-w-2xl">
-            <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
-              Clinical Specialisms & Symptoms
-            </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
-              You don&apos;t have to carry this alone.
-            </h2>
-            <div className="my-5 flex justify-center">
-              <img
-                src="/images/circle_image.png"
-                alt="Talkaid Counselling Services"
-                className="w-36 h-36 sm:w-42 sm:h-42 object-contain rounded-full shadow-xs border-2 border-stone-100 mx-auto"
-              />
-            </div>
-            <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-              Therapy at Talkaid is grounded in compassionate, paced integrative practice. Explore the common challenges we support clients through each week.
-            </p>
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
+            Clinical Specialisms & Symptoms
           </div>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-4">
+            You don&apos;t have to carry this alone.
+          </h2>
+          <div className="my-6 flex justify-center w-full">
+            <img
+              src="/images/circle_image.png"
+              alt="Talkaid Counselling Services"
+              className="w-72 h-72 sm:w-[400px] sm:h-[400px] md:w-[480px] md:h-[480px] max-w-full aspect-square object-contain rounded-full shadow-md border-4 border-white mx-auto"
+            />
+          </div>
+          <p className="text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+            Therapy at Talkaid is grounded in compassionate, paced integrative practice. Explore the common challenges we support clients through each week.
+          </p>
 
-          <div className="flex items-center gap-1.5 p-1 bg-stone-200/70 rounded-xl max-w-fit shrink-0 flex-wrap">
+          <div className="flex items-center justify-center gap-1.5 p-1 bg-stone-200/70 rounded-xl max-w-fit mx-auto flex-wrap">
             <button
               onClick={() => setSelectedCategory('all')}
               className={`py-1.5 px-3 rounded-lg text-xs font-medium transition-all ${
@@ -103,42 +101,24 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
                 </p>
 
                 {/* Common manifestations */}
-                <div className="space-y-3 mb-5 pt-4 border-t border-stone-100">
-                  <div>
-                    <p className="text-[11px] font-semibold text-stone-700 uppercase tracking-wider mb-1.5">
-                      How it may feel:
-                    </p>
-                    <ul className="space-y-1">
-                      {item.symptoms.map((symptom, sIdx) => (
-                        <li key={sIdx} className="text-xs text-stone-600 flex items-start gap-1.5">
-                          <span className="text-emerald-700 font-bold">·</span>
-                          <span>{symptom}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="text-[11px] font-semibold text-stone-700 uppercase tracking-wider mb-1.5">
-                      Our therapeutic approach:
-                    </p>
-                    <div className="flex flex-wrap gap-1">
-                      {item.therapeuticTechniques.map((tech, tIdx) => (
-                        <span
-                          key={tIdx}
-                          className="text-[11px] px-2 py-0.5 rounded-md bg-stone-100 text-stone-700 font-medium"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                <div className="pt-4 border-t border-stone-100">
+                  <p className="text-[11px] font-semibold text-stone-700 uppercase tracking-wider mb-1.5">
+                    How it may feel:
+                  </p>
+                  <ul className="space-y-1">
+                    {item.symptoms.map((symptom, sIdx) => (
+                      <li key={sIdx} className="text-xs text-stone-600 flex items-start gap-1.5">
+                        <span className="text-emerald-700 font-bold">·</span>
+                        <span>{symptom}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
               <button
                 onClick={onOpenBooking}
-                className="mt-2 w-full py-2 px-3 rounded-xl border border-stone-200 hover:border-emerald-700 hover:bg-emerald-50 text-stone-800 hover:text-emerald-900 text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                className="mt-5 w-full py-2 px-3 rounded-xl border border-stone-200 hover:border-emerald-700 hover:bg-emerald-50 text-stone-800 hover:text-emerald-900 text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 <span>Discuss {item.name}</span>
                 <ArrowRight className="w-3 h-3 text-emerald-800" />

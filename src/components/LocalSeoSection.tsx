@@ -36,7 +36,7 @@ export const LocalSeoSection: React.FC = () => {
             <div className="bg-stone-50 rounded-2xl overflow-hidden border border-stone-200">
               <div className="relative aspect-16/9 w-full overflow-hidden">
                 <img
-                  src={PRACTICE_INFO.images.room2}
+                  src={PRACTICE_INFO.images.room1}
                   alt="Talkaid Counselling Services quiet room in Oadby"
                   className="w-full h-full object-cover"
                 />
