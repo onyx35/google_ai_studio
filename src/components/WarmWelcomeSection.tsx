@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Coffee, Shield, Sparkles, MessageCircle, ArrowRight, CheckCircle2, Phone, Smile } from 'lucide-react';
+import { Heart, Coffee, Shield, Sparkles, MessageCircle, ArrowRight, CheckCircle2, Smile } from 'lucide-react';
 import { PRACTICE_INFO } from '../data/counsellingData';
 
 interface WarmWelcomeSectionProps {
@@ -52,9 +52,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             You don’t have to carry everything by yourself.
           </h2>
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-          Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.
-          </p>
+          <p className="text-stone-600 text-sm sm:text-base leading-relaxed">Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.</p>
         </div>
 
         {/* 2-Column Warm Philosophy & Therapist Message */}
@@ -148,17 +146,6 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-6 pt-5 border-t border-stone-200/70 bg-[#faf7f2] rounded-2xl p-3.5 flex items-center justify-between">
-              <span className="text-xs text-stone-600">Prefer an informal WhatsApp or call?</span>
-              <a
-                href={`tel:${PRACTICE_INFO.phone.replace(/\s+/g, '')}`}
-                className="text-xs font-bold text-stone-950 underline underline-offset-2 hover:text-black flex items-center gap-1"
-              >
-                <Phone className="w-3 h-3 text-[#354310]" />
-                <span>07983 680550</span>
-              </a>
             </div>
           </div>
         </div>

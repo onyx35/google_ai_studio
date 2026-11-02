@@ -7,7 +7,7 @@ interface SpecialtiesSectionProps {
 }
 
 export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBooking }) => {
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'emotional' | 'trauma' | 'relationships' | 'professional'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<'all' | 'emotional' | 'trauma' | 'relationships' | 'professional' | 'adhd'>('all');
 
   const filtered = selectedCategory === 'all'
     ? SPECIALTIES
@@ -22,15 +22,22 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
             <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
               Clinical Specialisms & Symptoms
             </div>
-            <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
               You don&apos;t have to carry this alone.
             </h2>
+            <div className="my-5 flex justify-center">
+              <img
+                src="/images/circle_image.png"
+                alt="Talkaid Counselling Services"
+                className="w-36 h-36 sm:w-42 sm:h-42 object-contain rounded-full shadow-xs border-2 border-stone-100 mx-auto"
+              />
+            </div>
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
               Therapy at Talkaid is grounded in compassionate, paced integrative practice. Explore the common challenges we support clients through each week.
             </p>
           </div>
 
-          <div className="flex items-center gap-1.5 p-1 bg-stone-200/70 rounded-xl max-w-fit shrink-0">
+          <div className="flex items-center gap-1.5 p-1 bg-stone-200/70 rounded-xl max-w-fit shrink-0 flex-wrap">
             <button
               onClick={() => setSelectedCategory('all')}
               className={`py-1.5 px-3 rounded-lg text-xs font-medium transition-all ${
@@ -46,6 +53,14 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
               }`}
             >
               Trauma & PTSD
+            </button>
+            <button
+              onClick={() => setSelectedCategory('adhd')}
+              className={`py-1.5 px-3 rounded-lg text-xs font-medium transition-all ${
+                selectedCategory === 'adhd' ? 'bg-white text-stone-900 shadow-xs' : 'text-stone-600 hover:text-stone-900'
+              }`}
+            >
+              ADHD
             </button>
             <button
               onClick={() => setSelectedCategory('emotional')}

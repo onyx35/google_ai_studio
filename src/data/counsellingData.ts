@@ -15,7 +15,7 @@ export interface ServiceItem {
 
 export interface IssueSpecialty {
   name: string;
-  category: 'emotional' | 'trauma' | 'relationships' | 'professional';
+  category: 'emotional' | 'trauma' | 'relationships' | 'professional' | 'adhd';
   description: string;
   symptoms: string[];
   therapeuticTechniques: string[];
@@ -152,6 +152,13 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 export const SPECIALTIES: IssueSpecialty[] = [
+  {
+    name: "ADHD & Neurodivergent Support",
+    category: "adhd",
+    description: "Affirming, practical therapy for adults and young people navigating ADHD, Autism, executive dysfunction, and burnout.",
+    symptoms: ["Executive dysfunction & overwhelm", "Rejection sensitive dysphoria (RSD)", "Sensory overload & masking exhaustion", "Hyperfocus & procrastination cycles"],
+    therapeuticTechniques: ["Neurodiversity-affirming strategies", "Executive function scaffolding", "Self-compassion & unmasking", "Emotional regulation tools"]
+  },
   {
     name: "Trauma & PTSD",
     category: "trauma",

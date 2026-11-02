@@ -162,7 +162,7 @@ export const Footer: React.FC<FooterProps> = ({
                 onClick={onOpenBooking}
                 className="w-full py-2 px-3 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white font-semibold text-xs transition-colors cursor-pointer text-center"
               >
-                Book Free 15-Min Intro Call
+                Book Free 10-Min Intro Call
               </button>
             </div>
           </div>
@@ -185,7 +185,7 @@ export const Footer: React.FC<FooterProps> = ({
         </div>
 
         {/* Bottom Credits & Copyright */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-stone-400 text-[11px]">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-stone-100 font-bold uppercase tracking-wider text-[11px]">
           <div>
             &copy; {new Date().getFullYear()} Talkaid Counselling Services. All rights reserved. Registered Member MBACP.
           </div>

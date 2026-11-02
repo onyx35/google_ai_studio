@@ -13,6 +13,7 @@ import { TherapyQuiz } from './components/TherapyQuiz';
 import { PractitionerProfile } from './components/PractitionerProfile';
 import { FeesAndBooking } from './components/FeesAndBooking';
 import { LocalSeoSection } from './components/LocalSeoSection';
+import { FirstSessionSection } from './components/FirstSessionSection';
 import { FaqSection } from './components/FaqSection';
 import { AuditView } from './components/AuditView';
 import { Footer } from './components/Footer';
@@ -99,6 +100,8 @@ export default function App() {
             />
 
             <LocalSeoSection />
+
+            <FirstSessionSection />
 
             <FaqSection
               onOpenBooking={() => handleOpenBooking()}
