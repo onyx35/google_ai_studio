@@ -77,7 +77,7 @@ export const BookingInquiryModal: React.FC<BookingInquiryModalProps> = ({
               <div className="flex justify-between">
                 <span className="text-stone-500">Format:</span>
                 <span className="font-medium text-stone-900">
-                  {format === 'in-person' ? 'In-Person (Oadby, Leicester)' : 'Secure Online Video (Zoom)'}
+                  {format === 'in-person' ? 'In-Person (Leicestershire)' : 'Secure Online Video (Zoom)'}
                 </span>
               </div>
               <div className="flex justify-between">

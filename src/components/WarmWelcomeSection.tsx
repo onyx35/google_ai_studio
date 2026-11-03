@@ -71,7 +71,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
 
               <blockquote className="text-base sm:text-lg text-stone-800 font-serif-display leading-relaxed italic mb-6">
                 &ldquo;People often reach out when they feel they have tried everything else, or when carrying their thoughts alone has simply become too exhausting. 
-                My consulting root is a quiet, comfortable sanctuary where you can take off the mask, breathe, and speak freely without any fear of judgment.&rdquo;
+                My consulting room is a quiet, comfortable sanctuary where you can take off the mask, breathe, and speak freely without any fear of judgment.&rdquo;
               </blockquote>
 
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
@@ -160,7 +160,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
               How are you feeling right now?
             </h3>
             <p className="text-xs sm:text-sm text-stone-600 mt-1">
-              Click any of the cards below to see how we gently support you through it:
+              Click any of the link below to see how we gently support you through it:
             </p>
           </div>
 

@@ -18,7 +18,7 @@ const QUESTIONS: Question[] = [
     title: "What has been feeling most challenging or persistent recently?",
     subtitle: "Select the area that resonates closest with your day-to-day experience.",
     options: [
-      { label: "Overwhelming worry, racing thoughts, panic sensations, or restlessness", scoreCategory: "anxiety", hint: "Anxiety & Panic" },
+      { label: "Overwhelming worry, racing thoughts, panic sensations, or restlessness", scoreCategory: "anxiety", hint: "Anxiety & Intrusive thoughts" },
       { label: "Persistent low mood, exhaustion, loss of joy, feeling numb or stuck", scoreCategory: "depression", hint: "Depression & Low Mood" },
       { label: "Flashbacks, physical tension from past distressing memories or trauma", scoreCategory: "trauma", hint: "Trauma & PTSD Recovery" },
       { label: "Repeated conflict, emotional disconnect, or trust breakdown with partner", scoreCategory: "couples", hint: "Couples & Relationship Counselling" },
@@ -170,11 +170,11 @@ export const TherapyQuiz: React.FC<TherapyQuizProps> = ({ onOpenBooking }) => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 text-xs text-stone-600">
                 <div className="p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
-                  <span>Free 15-Minute Intro Call Available</span>
+                  <span>Free 10-Minute Intro Call Available</span>
                 </div>
                 <div className="p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
-                  <span>In-Person (Oadby) or Online Video</span>
+                  <span>In-Person (Oadby) or Online</span>
                 </div>
               </div>
 

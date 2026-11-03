@@ -25,7 +25,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             Therapy tailored to where you are right now.
           </h2>
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-            Whether you are wrestling with anxiety, processing old pain, navigating a struggling relationship, or seeking professional clinical supervision, every session is grounded in empathy, safety, and evidence-based practice.
+            Whether you are wrestling with anxiety, depression, processing the past, ADHD, navigating a struggling relationship, or seeking professional clinical supervision, every session is grounded in empathy, safety, and evidence-based practice.
           </p>
         </div>
 
@@ -101,7 +101,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                 <div className="flex items-center gap-4 text-xs text-stone-500 py-3 border-t border-stone-200/70">
                   {service.inPersonAvailable && (
                     <span className="flex items-center gap-1">
-                      <MapPin className="w-3.5 h-3.5 text-stone-600" /> In-person (Oadby, Leicester)
+                      <MapPin className="w-3.5 h-3.5 text-stone-600" /> In-person (Leicestershire)
                     </span>
                   )}
                   {service.onlineAvailable && (

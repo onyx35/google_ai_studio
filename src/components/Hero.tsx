@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({
             </h1>
 
             <p className="text-base sm:text-lg text-stone-600 font-normal leading-relaxed mb-8 max-w-xl">
-              Professional, compassionate therapy for adults, couples, and young people dealing with anxiety, depression, trauma, ADHS, Autism and life crossroads. Discreet private consulting room in Oadby, Leicester with free parking, plus secure video sessions nationwide.
+              Professional, compassionate therapy for adults, couples, and young people dealing with anxiety, depression, trauma, ADHD, Autism and life crossroads. Discreet private consulting room in Oadby, Leicester with free parking, plus secure video sessions nationwide.
             </p>
 
             {/* CTAs */}

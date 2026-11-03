@@ -64,9 +64,9 @@ export const AUDIT_ISSUES: AuditIssue[] = [
     category: "Conversion & UX",
     severity: "high",
     title: "Friction-Heavy First Contact (No Embedded Booking or Free Chat CTA)",
-    currentWebsiteObservation: "The existing site relies on a plain mailto: link or raw phone number. There is no simple, reassuring contact form or invitation for a 15-minute free introductory phone call.",
+    currentWebsiteObservation: "The existing site relies on a plain mailto: link or raw phone number. There is no simple, reassuring contact form or invitation for a 10-minute free introductory phone call.",
     impactOnClients: "A person suffering from severe anxiety, depression, or burnout is often too exhausted or intimidated to call cold. A secure, short, empathetic 3-field inquiry form with an option to request a callback dramatically increases completed inquiries.",
-    actionableSolution: "Add a prominent 'Book Free 15-Minute Consultation' button and an embedded confidential self-referral form with reassurance of response within 24 hours.",
+    actionableSolution: "Add a prominent 'Book Free 10-Minute Consultation' button and an embedded confidential self-referral form with reassurance of response within 24 hours.",
     effort: "Moderate (1-2 days)"
   },
   {
@@ -115,7 +115,7 @@ export const TOP_KEYWORDS: KeywordOpportunity[] = [
     category: "Condition-Specific",
     monthlyUKVolume: "720 searches/mo",
     competition: "Medium",
-    targetPage: "Anxiety & Panic Page",
+    targetPage: "Anxiety & Intrusive thoughts",
     recommendation: "Create dedicated section answering 'How counselling helps panic attacks and anxiety in Leicester'."
   },
   {
@@ -205,7 +205,7 @@ export const DIRECTORY_PLAYBOOK: DirectoryRoadmapItem[] = [
     whyItMatters: "Highly reputable UK-specific directory with strong domain authority and great local Leicester visibility.",
     setupTips: [
       "Publish 1 short helpful article every 3 months to be featured in their editorial section.",
-      "Link directly to your free 15-minute consultation booking form."
+      "Link directly to your free 10-minute consultation booking form."
     ],
     linkExample: "https://www.counselling-directory.org.uk"
   },
@@ -277,7 +277,7 @@ export const GENERATED_SCHEMA_JSON = {
           "name": "Individual Adult Counselling",
           "description": "50-minute confidential 1-to-1 therapy for anxiety, depression, trauma, and emotional distress."
         },
-        "price": "60.00",
+        "price": "65.00",
         "priceCurrency": "GBP"
       },
       {

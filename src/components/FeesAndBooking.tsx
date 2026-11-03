@@ -29,7 +29,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
             Clear, honest fees with no hidden costs.
           </h2>
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-            Therapy is an essential investment in your wellbeing and peace of mind. We maintain clear and accessible session rates, with a free initial telephone consultation.
+            Therapy is an essential investment in your mental health, wellbeing and peace of mind. We maintain clear and accessible session rates, with a free initial telephone consultation.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                     <p className="font-semibold text-sm text-stone-900">Individual Adult Psychotherapy</p>
                     <p className="text-xs text-stone-500">50-minute 1-to-1 session</p>
                   </div>
-                  <span className="text-stone-900 font-semibold text-sm">£60 – £90</span>
+                  <span className="text-stone-900 font-semibold text-sm">£65 – £90</span>
                 </div>
 
                 <div className="py-3.5 flex items-center justify-between">
@@ -80,7 +80,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                     <p className="font-semibold text-sm text-stone-900">Clinical Supervision</p>
                     <p className="text-xs text-stone-500">60 to 90 minutes for therapists & care staff</p>
                   </div>
-                  <span className="text-stone-900 font-semibold text-sm">£60 – £80</span>
+                  <span className="text-stone-900 font-semibold text-sm">£55 – £75</span>
                 </div>
               </div>
 

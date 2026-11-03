@@ -60,7 +60,7 @@ export const LocalSeoSection: React.FC = () => {
                   <Car className="w-4 h-4 text-emerald-800 shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-stone-900">Parking: </span>
-                    <span>Free and easy on-street parking directly outside the premises on Highcroft Avenue without restrictions.</span>
+                    <span>Free on-premise when available, and easy on-street parking without restrictions.</span>
                   </div>
                 </div>
 
@@ -91,7 +91,7 @@ export const LocalSeoSection: React.FC = () => {
             <div>
               <h4 className="font-semibold text-stone-900 text-sm">Online Therapy Across the UK</h4>
               <p className="text-xs text-stone-600 mt-1 leading-relaxed">
-                If you reside outside Leicestershire or prefer attending from your home or office, we offer encrypted online sessions via Zoom, offering full parity of therapeutic care.
+                If you reside outside Leicestershire or prefer attending from your home or office, we offer encrypted online sessions via Microsoft Teams, offering full parity of therapeutic care.
               </p>
             </div>
           </div>

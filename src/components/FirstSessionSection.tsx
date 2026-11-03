@@ -8,7 +8,7 @@ export const FirstSessionSection: React.FC = () => {
         <div className="bg-stone-50 rounded-3xl p-6 sm:p-9 border border-stone-200/90 shadow-2xs">
           <div className="max-w-2xl mb-8">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-800 mb-2">
-              <BookOpen className="w-4 h-4" /> Demystifying The Process
+              <BookOpen className="w-4 h-4" /> The Process
             </div>
             <h3 className="text-2xl font-normal text-stone-900 font-serif-display">
               What happens during your first session?
@@ -55,7 +55,7 @@ export const FirstSessionSection: React.FC = () => {
               </div>
               <h4 className="text-xs font-bold text-stone-900 mb-1">No Obligation Decision</h4>
               <p className="text-xs text-stone-600 leading-relaxed">
-                You are encouraged to reflect privately before booking regular sessions. You remain in complete control.
+                You are encouraged to reflect privately before booking regular sessions. You remain in complete control, taking one session at a time.
               </p>
             </div>
           </div>

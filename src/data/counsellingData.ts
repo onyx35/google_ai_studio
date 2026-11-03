@@ -83,13 +83,13 @@ export const PRACTICE_INFO = {
     country: "United Kingdom",
     notes: "Quiet residential setting with discreet private entrance and free on-street parking."
   },
-  openingHours: "Monday to Friday: 8:00 AM – 8:00 PM · Saturday: 9:00 AM – 2:00 PM",
+  openingHours: "Monday to Friday: 8:00 AM – 5:30 PM · Thursday 8:00 AM - 11:00 AM · Consultation request on demand",
   pricingSummary: {
-    individual: "£60 – £90 per 50-minute session",
+    individual: "£65 – £90 per 50-minute session",
     under18: "£60 per 50-minute session",
     couples: "£90 per 60-minute session",
-    supervision: "£60 – £80 per hour / 90 minutes",
-    initialConsultation: "Free 15-minute introductory telephone / video call"
+    supervision: "£55 – £75 per hour / 90 minutes",
+    initialConsultation: "Free 10-minute introductory telephone / video call"
   }
 };
 
@@ -99,11 +99,11 @@ export const SERVICES: ServiceItem[] = [
     title: "Individual Adult Counselling",
     subtitle: "Confidential 1-to-1 psychotherapy tailored to your unique journey",
     duration: "50 minutes",
-    fee: "£60 – £90",
+    fee: "£65 – £90",
     tagline: "A safe, non-judgmental space to unpack overwhelm and rediscover calm",
-    description: "Personalised integrative therapy supporting individuals through life transitions, deep-seated emotional pain, panic, low self-worth, and existential questions. We work at your own pace, creating a secure therapeutic alliance.",
+    description: "Personalised integrative therapy supporting individuals through life transitions, deep-rooted emotional pain, panic, low self-worth, and mental health issues. We work at your own pace, creating a secure therapeutic alliance to work through your issues.",
     targetAudience: "Adults (18+) dealing with anxiety, depression, past trauma, or personal crisis",
-    commonIssues: ["Anxiety & Panic", "Depression & Low Mood", "Trauma & PTSD", "Grief & Bereavement", "Low Self-Worth", "Life Transitions"],
+    commonIssues: ["Anxiety & Intrusive thoughts", "Depression & Low Mood", "Trauma & PTSD", "Grief & Bereavement", "Low Self-Worth", "Life Transitions"],
     approach: "Integrative approach blending Humanistic, Psychodynamic, and Cognitive Behavioural techniques suited to your personal goals.",
     inPersonAvailable: true,
     onlineAvailable: true
@@ -129,7 +129,7 @@ export const SERVICES: ServiceItem[] = [
     duration: "50 minutes",
     fee: "£60",
     tagline: "Empowering adolescents to navigate school pressure, anxiety, and identity",
-    description: "A confidential and understanding space for teenagers struggling with the overwhelming pressures of modern youth. We help young people build emotional resilience, self-regulation tools, and healthy coping mechanisms.",
+    description: "Having worked with young people for over 20 years, I have a confidential and understanding space for teenagers struggling with the overwhelming pressures of modern life. We help build emotional resilience, self-regulation tools, and healthy coping mechanisms.",
     targetAudience: "Young people aged 13–17 with parental consent where appropriate",
     commonIssues: ["Exam & Academic Pressure", "Social Anxiety & Friendship Issues", "Self-Harm Urges & Regulation", "Family Changes & Separation", "Identity & Self-Esteem"],
     approach: "Developmentally tailored integrative counselling with creative interventions and emotional literacy building.",
@@ -145,7 +145,7 @@ export const SERVICES: ServiceItem[] = [
     tagline: "Professional support maintaining client safety, practitioner wellbeing, and ethical excellence",
     description: "Collaborative, consultative supervision for qualified therapists, trainees, NHS healthcare staff, social workers, and care sector professionals. Rooted in the BACP Ethical Framework and Hawkins & Shohet's Seven-Eyed Model.",
     targetAudience: "Trainee & qualified counsellors, psychotherapists, support workers, and nurses",
-    commonIssues: ["Caseload Management", "Transference & Countertransference", "Ethical Dilemmas & Safeguarding", "Practitioner Burnout & Vicarious Trauma", "Accreditation Support"],
+    commonIssues: ["Client Management", "Transference & Countertransference", "Ethical Dilemmas & Safeguarding", "Practitioner Burnout & Vicarious Trauma", "Accreditation Support"],
     approach: "Seven-Eyed Model of Supervision, reflective inquiry, and ethical problem-solving.",
     inPersonAvailable: true,
     onlineAvailable: true
@@ -170,7 +170,7 @@ export const SPECIALTIES: IssueSpecialty[] = [
   {
     name: "Anxiety & Panic Disorders",
     category: "emotional",
-    description: "Deconstructing overwhelming worry loops, catastrophic thinking, and physiological panic sensations.",
+    description: "Deconstructing overwhelming worry loops of over thinking, catastrophic thinking, insucure thoughts, and physiological panic sensations.",
     symptoms: ["Racing heart & breathlessness", "Constant dread or worry", "Avoidance of places or social situations", "Brain fog & muscle aches"],
     therapeuticTechniques: ["Cognitive restructuring", "Vagus nerve soothing techniques", "Exposure & pacing plans", "Mindfulness-based acceptance"]
   },
@@ -189,14 +189,14 @@ export const SPECIALTIES: IssueSpecialty[] = [
     therapeuticTechniques: ["Paced empowerment work", "Boundary restoration", "Shame deconstruction", "Safety stabilization"]
   },
   {
-    name: "Grief & Bereavement",
+    name: "Stages of Grief & Bereavement",
     category: "emotional",
-    description: "Holding space for complicated mourning, sudden loss, pet bereavement, or disenfranchised grief.",
+    description: "Holding space for complicated mourning, sudden loss, and grief.",
     symptoms: ["Profound waves of heartache", "Brain fog and disorientation", "Anger or numbness", "Fear of the future"],
     therapeuticTechniques: ["Dual-process model of grief", "Continuing bonds exploration", "Gentle rituals of remembrance"]
   },
   {
-    name: "Burnout & Caring Exhaustion",
+    name: "Burnout",
     category: "professional",
     description: "Revitalising therapists, NHS staff, teachers, and family caregivers suffering from compassion fatigue.",
     symptoms: ["Emotional depletion", "Cynicism or detachment", "Physical exhaustion", "Loss of personal boundaries"],
@@ -207,8 +207,8 @@ export const SPECIALTIES: IssueSpecialty[] = [
 export const FAQS: FAQItem[] = [
   {
     category: "getting-started",
-    question: "How do I take the first step, and what happens in the free 15-minute call?",
-    answer: "Taking the first step is often the hardest part. You can either submit an inquiry through our form or call 07983 680550. We arrange a brief, informal 15-minute phone or video conversation. This gives you a chance to share a little of what brings you to therapy, ask any questions, and see if working together feels comfortable and safe—with zero obligation to book."
+    question: "How do I take the first step, and what happens in the free 10-minute call?",
+    answer: "Taking the first step is often the hardest part. You can either submit an inquiry through our form or call 07983 680550. We arrange a brief, informal 10-minute phone conversation. This gives you a chance to share a little of what brings you to therapy, ask any questions, and see if working together feels comfortable and safe—with zero obligation to book."
   },
   {
     category: "practical",
