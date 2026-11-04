@@ -14,7 +14,7 @@ export const LocalSeoSection: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             Quiet, discreet therapy in Oadby, Leicester.
           </h2>
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
+          <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
             Finding a therapy room where you feel safe, unobserved, and comfortable is vital. Our practice is situated on a quiet residential street with free on-street parking and easy transport access.
           </p>
         </div>
@@ -49,13 +49,13 @@ export const LocalSeoSection: React.FC = () => {
                   <p className="text-sm text-stone-700 mt-1">
                     {PRACTICE_INFO.address.line1}, {PRACTICE_INFO.address.town}
                   </p>
-                  <p className="text-sm font-medium text-stone-900">
+                  <p className="text-sm text-stone-700">
                     {PRACTICE_INFO.address.city}, {PRACTICE_INFO.address.postcode}
                   </p>
                 </div>
               </div>
 
-              <div className="space-y-3.5 text-xs text-stone-600 border-t border-stone-200 pt-4">
+              <div className="space-y-3.5 text-base sm:text-lg text-stone-600 border-t border-stone-200 pt-4">
                 <div className="flex items-start gap-2.5">
                   <Car className="w-4 h-4 text-emerald-800 shrink-0 mt-0.5" />
                   <div>
@@ -84,13 +84,13 @@ export const LocalSeoSection: React.FC = () => {
           </div>
 
           {/* Nationwide Online Therapy Box */}
-          <div className="bg-emerald-900/5 rounded-2xl p-6 border border-emerald-900/15 flex items-start gap-3.5">
+          <div className="bg-emerald-900/5 rounded-2xl p-6 border border-emerald-900/15 flex items-start gap-3.5 text-base sm:text-lg">
             <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
               <Video className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-semibold text-stone-900 text-sm">Online Therapy Across the UK</h4>
-              <p className="text-xs text-stone-600 mt-1 leading-relaxed">
+              <h4 className="font-semibold text-stone-900 text-base sm:text-lg">Online Therapy Across the UK</h4>
+              <p className="text-base sm:text-lg text-stone-600 mt-1 leading-relaxed">
                 If you reside outside Leicestershire or prefer attending from your home or office, we offer encrypted online sessions via Microsoft Teams, offering full parity of therapeutic care.
               </p>
             </div>

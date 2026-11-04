@@ -52,7 +52,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             You don’t have to carry everything by yourself.
           </h2>
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed">Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.</p>
+          <p className="text-stone-600 text-base sm:text-lg leading-relaxed text-left">Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.</p>
         </div>
 
         {/* 2-Column Warm Philosophy & Therapist Message */}
@@ -74,7 +74,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                 My consulting room is a quiet, comfortable sanctuary where you can take off the mask, breathe, and speak freely without any fear of judgment.&rdquo;
               </blockquote>
 
-              <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
                 As a Registered Member of the British Association for Counselling and Psychotherapy (MBACP), I practice integrative therapy—which simply means I adapt to you and what you need, rather than forcing you into a rigid box.
               </p>
             </div>
@@ -156,7 +156,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
             <span className="text-xs font-bold uppercase tracking-wider text-stone-500 block mb-1">
               Where to Start
             </span>
-            <h3 className="text-xl sm:text-2xl font-normal text-stone-900 font-serif-display">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display">
               How are you feeling right now?
             </h3>
             <p className="text-xs sm:text-sm text-stone-600 mt-1">
@@ -178,7 +178,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                   }`}
                 >
                   <div>
-                    <span className="text-2xl mb-3 block">{item.emoji}</span>
+                    <span className="text-5xl mb-3 block">{item.emoji}</span>
                     <h4 className="font-semibold text-xs sm:text-sm text-stone-900 mb-2 leading-snug">
                       {item.feeling}
                     </h4>

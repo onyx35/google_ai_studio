@@ -24,7 +24,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
           <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             Frequently Asked Questions
           </h2>
-          <p className="text-stone-600 text-sm leading-relaxed">
+          <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
             Starting therapy naturally raises questions. Here are clear answers to the most common inquiries from prospective clients.
           </p>
         </div>
@@ -52,7 +52,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 text-stone-600 text-xs sm:text-sm leading-relaxed border-t border-stone-100 animate-in fade-in duration-200">
+                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 text-stone-600 text-base sm:text-lg leading-relaxed border-t border-stone-100 animate-in fade-in duration-200">
                     <p className="mt-3">{faq.answer}</p>
                   </div>
                 )}
@@ -64,15 +64,15 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
         {/* Still have questions banner */}
         <div className="mt-10 p-6 rounded-2xl bg-white border border-stone-200 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-left">
-            <h4 className="text-sm font-bold text-stone-900">Have a specific or confidential question?</h4>
-            <p className="text-xs text-stone-600 mt-0.5">We are always happy to discuss your circumstances before deciding.</p>
+            <h4 className="text-base sm:text-lg font-bold text-stone-900">Have a specific or confidential question?</h4>
+            <p className="text-base sm:text-lg text-stone-600 mt-0.5">We are always happy to discuss your circumstances before deciding.</p>
           </div>
           <button
             onClick={onOpenBooking}
             className="py-2.5 px-5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-semibold transition-colors shrink-0 flex items-center gap-1.5 cursor-pointer"
           >
             <PhoneCall className="w-3.5 h-3.5" />
-            <span>Ask During Free 15-Min Call</span>
+            <span>Ask During Free 10-Min Call</span>
           </button>
         </div>
       </div>

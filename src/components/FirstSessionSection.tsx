@@ -13,7 +13,7 @@ export const FirstSessionSection: React.FC = () => {
             <h3 className="text-2xl font-normal text-stone-900 font-serif-display">
               What happens during your first session?
             </h3>
-            <p className="text-xs sm:text-sm text-stone-600 mt-1">
+            <p className="text-base sm:text-lg text-stone-600 mt-1">
               Fear of being put on the spot is natural. Here is exactly how we approach our first conversation:
             </p>
           </div>
@@ -60,7 +60,7 @@ export const FirstSessionSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-6 pt-4 border-t border-stone-200 flex items-center gap-2 text-xs text-stone-500">
+          <div className="mt-6 pt-4 border-t border-stone-200 flex items-center gap-2 text-base sm:text-lg text-stone-500">
             <Lock className="w-3.5 h-3.5 text-emerald-800 shrink-0" />
             <span>All sessions are conducted in accordance with the British Association for Counselling and Psychotherapy (BACP) Ethical Framework.</span>
           </div>

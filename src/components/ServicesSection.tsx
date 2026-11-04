@@ -98,7 +98,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                 </div>
 
                 {/* Delivery format */}
-                <div className="flex items-center gap-4 text-xs text-stone-500 py-3 border-t border-stone-200/70">
+                <div className="flex items-center gap-4 text-base sm:text-lg text-stone-500 py-3 border-t border-stone-200/70">
                   {service.inPersonAvailable && (
                     <span className="flex items-center gap-1">
                       <MapPin className="w-3.5 h-3.5 text-stone-600" /> In-person (Leicestershire)

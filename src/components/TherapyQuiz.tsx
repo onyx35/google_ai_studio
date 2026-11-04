@@ -107,7 +107,7 @@ export const TherapyQuiz: React.FC<TherapyQuizProps> = ({ onOpenBooking }) => {
           <h2 className="text-3xl font-normal text-stone-900 font-serif-display mb-3">
             Is counselling right for you?
           </h2>
-          <p className="text-stone-600 text-sm max-w-lg mx-auto">
+          <p className="text-stone-600 text-base sm:text-lg max-w-lg mx-auto">
             Answer 3 quiet questions to receive personalized insight into how our practice can support you.
           </p>
         </div>
@@ -132,7 +132,7 @@ export const TherapyQuiz: React.FC<TherapyQuizProps> = ({ onOpenBooking }) => {
               <h3 className="text-xl sm:text-2xl font-semibold text-stone-900 font-serif-display mb-2">
                 {QUESTIONS[currentStep].title}
               </h3>
-              <p className="text-xs sm:text-sm text-stone-500 mb-6">
+              <p className="text-base sm:text-lg text-stone-500 mb-6">
                 {QUESTIONS[currentStep].subtitle}
               </p>
 

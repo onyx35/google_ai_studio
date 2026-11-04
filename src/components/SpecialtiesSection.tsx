@@ -31,7 +31,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
               className="w-72 h-72 sm:w-[400px] sm:h-[400px] md:w-[480px] md:h-[480px] max-w-full aspect-square object-contain rounded-full shadow-md border-4 border-white mx-auto"
             />
           </div>
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+          <p className="text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6 text-right">
             Therapy at Talkaid is rooted in compassionate, paced integrative practice. Explore the common challenges we support clients through each week. General counselling includes all the issues in the above poster. Below are some examples of what we deal with.
           </p>
 
@@ -96,7 +96,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
                   {item.name}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-stone-600 mb-5 leading-relaxed">
+                <p className="text-base sm:text-lg text-stone-600 mb-5 leading-relaxed">
                   {item.description}
                 </p>
 
@@ -134,10 +134,10 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
               <HeartHandshake className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-sm font-semibold text-stone-900">
+              <p className="text-base sm:text-lg font-semibold text-stone-900">
                 Not sure what category your feelings fall into?
               </p>
-              <p className="text-xs text-stone-600">
+              <p className="text-base sm:text-lg text-stone-600">
                 You don&apos;t need a clinical diagnosis or medical label to start therapy. We explore whatever is on your mind.
               </p>
             </div>

@@ -25,17 +25,17 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="md:col-span-6">
             {/* Clean unboxed metadata separator */}
             <div className="flex items-center flex-wrap gap-2 text-xs text-stone-600 mb-4 font-medium">
-              <span className="flex items-center gap-1 text-emerald-800 font-semibold">
+              <span className="flex items-center gap-1 text-xs font-semibold tracking-wider text-emerald-800 uppercase">
                 <Shield className="w-3.5 h-3.5" /> Registered Member MBACP
               </span>
               <span aria-hidden="true">·</span>
-              <span>Counseller & Clinical Supervisor</span>
+              <span className="text-xs font-semibold tracking-wider text-emerald-800 uppercase">Counseller & Clinical Supervisor</span>
               <span aria-hidden="true">·</span>
-              <span> Leicestershire & Online </span>
+              <span className="text-xs font-semibold tracking-wider text-emerald-800 uppercase"> Leicestershire & Online </span>
             </div>
 
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-normal tracking-tight text-stone-900 font-serif-display leading-[1.25] mb-4">
-              A calm, confidential space to <span className="italic font-medium text-emerald-900">heal</span>, understand yourself, and move forward.
+              A calm, confidential space to <span className="font-serif-display italic font-medium text-[#b4c271]">heal</span>, understand yourself, and move forward.
             </h1>
 
             <p className="text-base sm:text-lg text-stone-600 font-normal leading-relaxed mb-8 max-w-xl">
@@ -64,8 +64,8 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Friendly reassurance micro-note */}
             <div className="flex items-center gap-2.5 text-xs text-stone-700 bg-white/90 border border-[#b4c271]/30 rounded-xl p-3 max-w-xl shadow-2xs">
               <span className="w-2.5 h-2.5 rounded-full bg-[#b4c271] shrink-0" />
-              <p>
-                <strong className="text-stone-950 font-semibold">Take all the time you need.</strong> Free 10-minute introductory chats are completely informal—an unhurried chance to say hello and see how you feel.
+              <p className="text-base sm:text-lg text-stone-700">
+                Take a free 10-minute introductory chat; it's completely informal and a chance to say hello and see how you feel.
               </p>
             </div>
           </div>

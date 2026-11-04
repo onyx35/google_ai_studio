@@ -88,7 +88,7 @@ export const PRACTICE_INFO = {
     individual: "£65 – £90 per 50-minute session",
     under18: "£60 per 50-minute session",
     couples: "£90 per 60-minute session",
-    supervision: "£55 – £75 per hour / 90 minutes",
+    supervision: "£65 – £75 per hour / 90 minutes",
     initialConsultation: "Free 10-minute introductory telephone / video call"
   }
 };
@@ -103,7 +103,7 @@ export const SERVICES: ServiceItem[] = [
     tagline: "A safe, non-judgmental space to unpack overwhelm and rediscover calm",
     description: "Personalised integrative therapy supporting individuals through life transitions, deep-rooted emotional pain, panic, low self-worth, and mental health issues. We work at your own pace, creating a secure therapeutic alliance to work through your issues.",
     targetAudience: "Adults (18+) dealing with anxiety, depression, past trauma, or personal crisis",
-    commonIssues: ["Anxiety & Intrusive thoughts", "Depression & Low Mood", "Trauma & PTSD", "Grief & Bereavement", "Low Self-Worth", "Life Transitions"],
+    commonIssues: ["Anxiety & Intrusive thoughts", "Depression & Low Mood", "Trauma & PTSD", "Grief & Bereavement", "Low Self-Worth", "Life Transitions", "ADHD", "Many other areas of mental health"],
     approach: "Integrative approach blending Humanistic, Psychodynamic, and Cognitive Behavioural techniques suited to your personal goals.",
     inPersonAvailable: true,
     onlineAvailable: true
@@ -131,7 +131,7 @@ export const SERVICES: ServiceItem[] = [
     tagline: "Empowering adolescents to navigate school pressure, anxiety, and identity",
     description: "Having worked with young people for over 20 years, I have a confidential and understanding space for teenagers struggling with the overwhelming pressures of modern life. We help build emotional resilience, self-regulation tools, and healthy coping mechanisms.",
     targetAudience: "Young people aged 13–17 with parental consent where appropriate",
-    commonIssues: ["Exam & Academic Pressure", "Social Anxiety & Friendship Issues", "Self-Harm Urges & Regulation", "Family Changes & Separation", "Identity & Self-Esteem"],
+    commonIssues: ["Exam & Academic Pressure", "Social Anxiety & Friendship Issues", "Self-Harm Urges & Regulation", "Family Changes & Separation", "Identity & Self-Esteem", "Social Media"],
     approach: "Developmentally tailored integrative counselling with creative interventions and emotional literacy building.",
     inPersonAvailable: true,
     onlineAvailable: true
@@ -141,11 +141,11 @@ export const SERVICES: ServiceItem[] = [
     title: "Clinical Supervision",
     subtitle: "Ethical, reflective oversight for counsellors & caring professionals",
     duration: "60 – 90 minutes",
-    fee: "£60 – £80",
+    fee: "£65 – £75",
     tagline: "Professional support maintaining client safety, practitioner wellbeing, and ethical excellence",
     description: "Collaborative, consultative supervision for qualified therapists, trainees, NHS healthcare staff, social workers, and care sector professionals. Rooted in the BACP Ethical Framework and Hawkins & Shohet's Seven-Eyed Model.",
     targetAudience: "Trainee & qualified counsellors, psychotherapists, support workers, and nurses",
-    commonIssues: ["Client Management", "Transference & Countertransference", "Ethical Dilemmas & Safeguarding", "Practitioner Burnout & Vicarious Trauma", "Accreditation Support"],
+    commonIssues: ["Client Management", "Transference & Countertransference", "Ethical Dilemmas & Safeguarding", "Practitioner Burnout & Vicarious Trauma", "Accreditation Support", "Effect on you as a Counseller"],
     approach: "Seven-Eyed Model of Supervision, reflective inquiry, and ethical problem-solving.",
     inPersonAvailable: true,
     onlineAvailable: true
