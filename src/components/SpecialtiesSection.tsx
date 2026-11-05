@@ -31,8 +31,8 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
               className="w-72 h-72 sm:w-[400px] sm:h-[400px] md:w-[480px] md:h-[480px] max-w-full aspect-square object-contain rounded-full shadow-md border-4 border-white mx-auto"
             />
           </div>
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6 text-right">
-            Therapy at Talkaid is rooted in compassionate, paced integrative practice. Explore the common challenges we support clients through each week. General counselling includes all the issues in the above poster. Below are some examples of what we deal with.
+          <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6 text-left">
+            Therapy at Talkaid is rooted in compassionate and paced integrative practice. Explore the common challenges we support clients through each week. General counselling includes all the issues in the above poster. Below are some examples of what we deal with.
           </p>
 
           <div className="flex items-center justify-center gap-1.5 p-1 bg-stone-200/70 rounded-xl max-w-fit mx-auto flex-wrap">
@@ -96,7 +96,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
                   {item.name}
                 </h3>
 
-                <p className="text-base sm:text-lg text-stone-600 mb-5 leading-relaxed">
+                <p className="text-stone-700 text-sm sm:text-base leading-relaxed mb-5">
                   {item.description}
                 </p>
 

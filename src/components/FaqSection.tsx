@@ -24,7 +24,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
           <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             Frequently Asked Questions
           </h2>
-          <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
+          <p className="text-stone-700 text-sm sm:text-base leading-relaxed text-left">
             Starting therapy naturally raises questions. Here are clear answers to the most common inquiries from prospective clients.
           </p>
         </div>
@@ -52,7 +52,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 text-stone-600 text-base sm:text-lg leading-relaxed border-t border-stone-100 animate-in fade-in duration-200">
+                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 text-stone-700 text-sm sm:text-base leading-relaxed border-t border-stone-100 animate-in fade-in duration-200">
                     <p className="mt-3">{faq.answer}</p>
                   </div>
                 )}
@@ -65,7 +65,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
         <div className="mt-10 p-6 rounded-2xl bg-white border border-stone-200 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-left">
             <h4 className="text-base sm:text-lg font-bold text-stone-900">Have a specific or confidential question?</h4>
-            <p className="text-base sm:text-lg text-stone-600 mt-0.5">We are always happy to discuss your circumstances before deciding.</p>
+            <p className="text-stone-700 text-sm sm:text-base mt-0.5 leading-relaxed">We are always happy to discuss your circumstances before deciding.</p>
           </div>
           <button
             onClick={onOpenBooking}

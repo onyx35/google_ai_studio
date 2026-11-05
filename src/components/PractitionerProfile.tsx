@@ -35,7 +35,7 @@ export const PractitionerProfile: React.FC = () => {
               At Talkaid Counselling Services, I believe entering therapy is an act of genuine courage. Whether you are dealing with chronic anxiety that impacts your daily life, working through painful trauma or abuse, navigating marriage difficulties, or seeking clinical supervision, you are met with warmth, empathy, and unconditional respect.
             </p>
 
-            <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
+            <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
               My clinical approach is integrative—drawing collaboratively from Humanistic, Psychodynamic, and Cognitive Behavioural traditions. Rather than imposing rigid frameworks, we work at a pace that honours your emotional safety and personal values.
             </p>
 

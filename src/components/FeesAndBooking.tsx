@@ -21,14 +21,14 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
     <section id="fees" className="py-16 md:py-24 bg-stone-50 border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
-        <div className="max-w-2xl mb-12">
-          <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Transparent Pricing & Budgeting
           </div>
           <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             Clear, honest fees with no hidden costs.
           </h2>
-          <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
+          <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">
             Therapy is an essential investment in your mental health, wellbeing and peace of mind. We maintain clear and accessible session rates, with a free initial telephone consultation.
           </p>
         </div>
@@ -46,7 +46,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                 <div className="py-3.5 flex items-center justify-between text-base sm:text-lg">
                   <div>
                     <p className="font-semibold text-base sm:text-lg text-stone-900">Introductory Consultation</p>
-                    <p className="text-base sm:text-lg text-stone-500">10-minute phone or video conversation</p>
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">10-minute phone or video conversation</p>
                   </div>
                   <span className="text-emerald-800 font-semibold text-base sm:text-lg">FREE</span>
                 </div>
@@ -54,7 +54,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                 <div className="py-3.5 flex items-center justify-between text-base sm:text-lg">
                   <div>
                     <p className="font-semibold text-base sm:text-lg text-stone-900">Individual Adult Psychotherapy</p>
-                    <p className="text-base sm:text-lg text-stone-500">50-minute 1-to-1 session</p>
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">50-minute 1-to-1 session</p>
                   </div>
                   <span className="text-stone-900 font-semibold text-base sm:text-lg">£65 – £90</span>
                 </div>
@@ -62,7 +62,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                 <div className="py-3.5 flex items-center justify-between text-base sm:text-lg">
                   <div>
                     <p className="font-semibold text-base sm:text-lg text-stone-900">Couples & Relationship Counselling</p>
-                    <p className="text-base sm:text-lg text-stone-500">60-minute joint session</p>
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">60-minute joint session</p>
                   </div>
                   <span className="text-stone-900 font-semibold text-base sm:text-lg">£90</span>
                 </div>
@@ -70,7 +70,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                 <div className="py-3.5 flex items-center justify-between text-base sm:text-lg">
                   <div>
                     <p className="font-semibold text-base sm:text-lg text-stone-900">Young People (Ages 13–17)</p>
-                    <p className="text-base sm:text-lg text-stone-500">50-minute youth session</p>
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">50-minute youth session</p>
                   </div>
                   <span className="text-stone-900 font-semibold text-base sm:text-lg">£60</span>
                 </div>
@@ -78,13 +78,13 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                 <div className="py-3.5 flex items-center justify-between text-base sm:text-lg">
                   <div>
                     <p className="font-semibold text-base sm:text-lg text-stone-900">Clinical Supervision</p>
-                    <p className="text-base sm:text-lg text-stone-500">60 to 90 minutes for therapists & care staff</p>
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">60 to 90 minutes for therapists & care staff</p>
                   </div>
                   <span className="text-stone-900 font-semibold text-base sm:text-lg">£65 – £75</span>
                 </div>
               </div>
 
-              <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2 text-base sm:text-lg text-stone-500">
+              <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2 text-stone-700 text-sm sm:text-base leading-relaxed">
                 <CreditCard className="w-3.5 h-3.5 text-stone-400" />
                 <span>Payment accepted via online bank transfer or major debit/credit card. Invoices available for employer wellbeing schemes.</span>
               </div>
@@ -100,7 +100,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
               <h3 className="text-xl font-bold text-stone-900 font-serif-display mb-2">
                 Send a Safe Message
               </h3>
-              <p className="text-base sm:text-lg text-stone-500 mb-5 leading-relaxed">
+              <p className="text-stone-700 text-sm sm:text-base mb-5 leading-relaxed">
                 Take the pressure off. Leave your contact details and a brief note; we will contact you discreetly within 24 hours.
               </p>
 
@@ -173,7 +173,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                     <button
                       type="button"
                       onClick={() => onOpenBookingModal()}
-                      className="text-base sm:text-lg text-stone-500 hover:text-stone-900 underline"
+                      className="text-stone-700 text-sm sm:text-base hover:text-stone-900 underline"
                     >
                       Or prefer to schedule a specific call time? Click here
                     </button>

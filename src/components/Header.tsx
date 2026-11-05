@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({
               Accepting New Clients
             </span>
             <span className="text-stone-700/60 hidden sm:inline" aria-hidden="true">·</span>
-            <span className="text-stone-900 font-medium hidden sm:inline">
+            <span className="text-stone-950 font-bold hidden sm:inline">
               Leicester (In-Person) & Globally Online
             </span>
           </div>
@@ -44,11 +44,11 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="text-stone-700/50" aria-hidden="true">|</span>
             <button
               onClick={onOpenCrisis}
-              className="text-stone-900 hover:text-rose-950 transition-colors flex items-center gap-1 text-[11px] font-semibold cursor-pointer"
+              className="text-stone-950 hover:text-rose-950 transition-colors flex items-center gap-1 text-xs font-bold cursor-pointer"
               title="Urgent mental health support contacts"
             >
               <HeartPulse className="w-3.5 h-3.5 text-rose-800" />
-              <span>Urgent Support</span>
+              <span className="text-stone-950 font-bold">Urgent Support</span>
             </button>
           </div>
         </div>

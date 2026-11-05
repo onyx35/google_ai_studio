@@ -38,7 +38,7 @@ export const Hero: React.FC<HeroProps> = ({
               A calm, confidential space to <span className="font-serif-display italic font-medium text-[#b4c271]">heal</span>, understand yourself, and move forward.
             </h1>
 
-            <p className="text-base sm:text-lg text-stone-600 font-normal leading-relaxed mb-8 max-w-xl">
+            <p className="text-stone-700 text-sm sm:text-base font-normal leading-relaxed mb-8 max-w-xl">
               Professional, compassionate therapy for adults, couples, and young people dealing with anxiety, depression, trauma, ADHD, Autism and life crossroads. Discreet private consulting room in Oadby, Leicester with free parking, plus secure video sessions nationwide.
             </p>
 
@@ -64,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Friendly reassurance micro-note */}
             <div className="flex items-center gap-2.5 text-xs text-stone-700 bg-white/90 border border-[#b4c271]/30 rounded-xl p-3 max-w-xl shadow-2xs">
               <span className="w-2.5 h-2.5 rounded-full bg-[#b4c271] shrink-0" />
-              <p className="text-base sm:text-lg text-stone-700">
+              <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
                 Take a free 10-minute introductory chat; it's completely informal and a chance to say hello and see how you feel.
               </p>
             </div>
@@ -74,11 +74,11 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="md:col-span-6">
             <div className="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/90 shadow-sm relative">
               {/* Therapy Practice Image from Website - Complete Circle */}
-              <div className="relative rounded-full overflow-hidden mb-5 border-4 border-stone-100 shadow-md aspect-square w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 max-w-full mx-auto group bg-stone-100">
+              <div className="relative rounded-full overflow-hidden mb-5 shadow-md aspect-square w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 max-w-full mx-auto group">
                 <img
                   src={PRACTICE_INFO.images.teamIndex}
                   alt="Talkaid Counselling Services"
-                  className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-contain rounded-full transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="text-center mb-5">

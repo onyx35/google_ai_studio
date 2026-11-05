@@ -7,14 +7,14 @@ export const LocalSeoSection: React.FC = () => {
     <section id="location" className="py-16 md:py-24 bg-white border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Practice Location & Accessibility
           </div>
-          <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
+          <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3 whitespace-nowrap">
             Quiet, discreet therapy in Oadby, Leicester.
           </h2>
-          <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
+          <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">
             Finding a therapy room where you feel safe, unobserved, and comfortable is vital. Our practice is situated on a quiet residential street with free on-street parking and easy transport access.
           </p>
         </div>
@@ -55,7 +55,7 @@ export const LocalSeoSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="space-y-3.5 text-base sm:text-lg text-stone-600 border-t border-stone-200 pt-4">
+              <div className="space-y-3.5 text-stone-700 text-sm sm:text-base leading-relaxed border-t border-stone-200 pt-4">
                 <div className="flex items-start gap-2.5">
                   <Car className="w-4 h-4 text-emerald-800 shrink-0 mt-0.5" />
                   <div>
@@ -84,13 +84,13 @@ export const LocalSeoSection: React.FC = () => {
           </div>
 
           {/* Nationwide Online Therapy Box */}
-          <div className="bg-emerald-900/5 rounded-2xl p-6 border border-emerald-900/15 flex items-start gap-3.5 text-base sm:text-lg">
+          <div className="bg-emerald-900/5 rounded-2xl p-6 border border-emerald-900/15 flex items-start gap-3.5 text-stone-700 text-sm sm:text-base leading-relaxed">
             <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
               <Video className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-semibold text-stone-900 text-base sm:text-lg">Online Therapy Across the UK</h4>
-              <p className="text-base sm:text-lg text-stone-600 mt-1 leading-relaxed">
+              <h4 className="font-semibold text-stone-900 text-sm sm:text-base">Online Therapy Across the UK</h4>
+              <p className="text-stone-700 text-sm sm:text-base mt-1 leading-relaxed">
                 If you reside outside Leicestershire or prefer attending from your home or office, we offer encrypted online sessions via Microsoft Teams, offering full parity of therapeutic care.
               </p>
             </div>

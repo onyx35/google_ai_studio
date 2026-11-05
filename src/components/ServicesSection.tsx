@@ -17,20 +17,20 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
     <section id="services" className="py-16 md:py-24 bg-white border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Header */}
-        <div className="max-w-4xl mb-12">
-          <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Professional Practice Offerings
           </div>
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-4 whitespace-nowrap">
             Therapy tailored to where you are right now.
           </h2>
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
+          <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">
             Whether you are wrestling with anxiety, depression, processing the past, ADHD, navigating a struggling relationship, or seeking professional clinical supervision, every session is grounded in empathy, safety, and evidence-based practice.
           </p>
         </div>
 
         {/* Tab Selector */}
-        <div className="flex flex-wrap items-center gap-1.5 p-1 bg-stone-100 rounded-xl mb-8 max-w-fit">
+        <div className="flex flex-wrap items-center justify-center gap-1.5 p-1 bg-stone-100 rounded-xl mb-8 max-w-fit mx-auto">
           <button
             onClick={() => setActiveTab('all')}
             className={`py-2 px-3.5 rounded-lg text-xs font-semibold transition-all ${

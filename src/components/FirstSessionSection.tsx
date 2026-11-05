@@ -6,14 +6,14 @@ export const FirstSessionSection: React.FC = () => {
     <section id="first-session" className="py-16 md:py-24 bg-white border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4">
         <div className="bg-stone-50 rounded-3xl p-6 sm:p-9 border border-stone-200/90 shadow-2xs">
-          <div className="max-w-2xl mb-8">
-            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-800 mb-2">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <div className="inline-flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-800 mb-2">
               <BookOpen className="w-4 h-4" /> The Process
             </div>
-            <h3 className="text-2xl font-normal text-stone-900 font-serif-display">
+            <h3 className="text-2xl sm:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-2">
               What happens during your first session?
             </h3>
-            <p className="text-base sm:text-lg text-stone-600 mt-1">
+            <p className="text-stone-700 text-sm sm:text-base max-w-xl mx-auto leading-relaxed text-left">
               Fear of being put on the spot is natural. Here is exactly how we approach our first conversation:
             </p>
           </div>
@@ -60,7 +60,7 @@ export const FirstSessionSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-6 pt-4 border-t border-stone-200 flex items-center gap-2 text-base sm:text-lg text-stone-500">
+          <div className="mt-6 pt-4 border-t border-stone-200 flex items-center gap-2 text-stone-700 text-sm sm:text-base leading-relaxed">
             <Lock className="w-3.5 h-3.5 text-emerald-800 shrink-0" />
             <span>All sessions are conducted in accordance with the British Association for Counselling and Psychotherapy (BACP) Ethical Framework.</span>
           </div>

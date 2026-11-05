@@ -44,15 +44,15 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         {/* Top Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#b4c271]/25 border border-[#9eb05b]/40 text-stone-900 text-xs font-semibold mb-3">
             <Heart className="w-3.5 h-3.5 text-stone-900 fill-stone-900/30" />
             <span>A Safe, Non-Judgmental Welcome</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3 whitespace-nowrap">
             You don’t have to carry everything by yourself.
           </h2>
-          <p className="text-stone-600 text-base sm:text-lg leading-relaxed text-left">Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.</p>
+          <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.</p>
         </div>
 
         {/* 2-Column Warm Philosophy & Therapist Message */}
@@ -74,7 +74,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                 My consulting room is a quiet, comfortable sanctuary where you can take off the mask, breathe, and speak freely without any fear of judgment.&rdquo;
               </blockquote>
 
-              <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
+              <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
                 As a Registered Member of the British Association for Counselling and Psychotherapy (MBACP), I practice integrative therapy—which simply means I adapt to you and what you need, rather than forcing you into a rigid box.
               </p>
             </div>
@@ -152,14 +152,14 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
 
         {/* Interactive "How are you feeling right now?" Navigator */}
         <div className="bg-white rounded-3xl p-6 sm:p-9 border border-stone-200/90 shadow-2xs">
-          <div className="max-w-xl mb-6">
+          <div className="text-center max-w-2xl mx-auto mb-8">
             <span className="text-xs font-bold uppercase tracking-wider text-stone-500 block mb-1">
               Where to Start
             </span>
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-2">
               How are you feeling right now?
             </h3>
-            <p className="text-xs sm:text-sm text-stone-600 mt-1">
+            <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
               Click any of the link below to see how we gently support you through it:
             </p>
           </div>

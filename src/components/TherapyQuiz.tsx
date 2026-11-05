@@ -100,14 +100,14 @@ export const TherapyQuiz: React.FC<TherapyQuizProps> = ({ onOpenBooking }) => {
       <div id="questionnaire" className="absolute -top-20 pointer-events-none" />
       <div className="max-w-3xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             <Sparkles className="w-3.5 h-3.5" /> Gentle 60-Second Self-Reflection
           </div>
-          <h2 className="text-3xl font-normal text-stone-900 font-serif-display mb-3">
+          <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             Is counselling right for you?
           </h2>
-          <p className="text-stone-600 text-base sm:text-lg max-w-lg mx-auto">
+          <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-lg mx-auto text-left">
             Answer 3 quiet questions to receive personalized insight into how our practice can support you.
           </p>
         </div>
