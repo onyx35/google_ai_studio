@@ -134,10 +134,10 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
               <HeartHandshake className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-base sm:text-lg font-semibold text-stone-900">
+              <p className="text-stone-900 text-sm sm:text-base font-semibold leading-relaxed">
                 Not sure what category your feelings fall into?
               </p>
-              <p className="text-base sm:text-lg text-stone-600">
+              <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
                 You don&apos;t need a clinical diagnosis or medical label to start therapy. We explore whatever is on your mind.
               </p>
             </div>

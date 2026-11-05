@@ -108,7 +108,7 @@ export const TherapyQuiz: React.FC<TherapyQuizProps> = ({ onOpenBooking }) => {
             Is counselling right for you?
           </h2>
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-lg mx-auto text-left">
-            Answer 3 quiet questions to receive personalized insight into how our practice can support you.
+            Answer quick questions to receive personalised insight into how our practice can support you.
           </p>
         </div>
 
