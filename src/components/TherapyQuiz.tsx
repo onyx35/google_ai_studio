@@ -183,7 +183,7 @@ export const TherapyQuiz: React.FC<TherapyQuizProps> = ({ onOpenBooking }) => {
                   onClick={() => onOpenBooking(recommendedServiceId)}
                   className="w-full sm:w-auto py-3 px-6 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-semibold text-sm transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <span>Book Free 15-Min Intro for this Service</span>
+                  <span>Booking service</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
 
@@ -192,7 +192,7 @@ export const TherapyQuiz: React.FC<TherapyQuizProps> = ({ onOpenBooking }) => {
                   className="w-full sm:w-auto py-3 px-4 rounded-xl border border-stone-300 hover:bg-stone-50 text-stone-600 text-sm font-medium transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
-                  <span>Retake Quiz</span>
+                  <span>Back to Questionnaire</span>
                 </button>
               </div>
             </div>

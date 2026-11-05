@@ -63,7 +63,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               key={service.id}
               className="rounded-2xl border border-stone-200 bg-stone-50/50 p-6 sm:p-7 flex flex-col justify-between hover:border-emerald-700/40 hover:bg-white transition-all shadow-xs group"
             >
-              <div>
+              <div className="flex-1 flex flex-col">
                 {/* Meta header unboxed */}
                 <div className="flex items-center justify-between gap-3 text-xs text-stone-500 mb-3">
                   <span className="flex items-center gap-1 font-medium text-emerald-800">
@@ -98,7 +98,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                 </div>
 
                 {/* Delivery format */}
-                <div className="flex items-center gap-4 text-base sm:text-lg text-stone-500 py-3 border-t border-stone-200/70">
+                <div className="mt-auto flex items-center gap-4 text-xs text-stone-500 py-3 border-t border-stone-200/70">
                   {service.inPersonAvailable && (
                     <span className="flex items-center gap-1">
                       <MapPin className="w-3.5 h-3.5 text-stone-600" /> In-person (Leicestershire)
