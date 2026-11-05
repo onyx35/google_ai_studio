@@ -41,7 +41,7 @@ export const PRACTICE_INFO = {
     room3: "/images/room-3.jpeg",
     banner1: "/images/banner-1.jpg",
     banner2: "/images/banner-2.jpg",
-    teamIndex: "/images/team-index.png",
+    teamIndex: "/images/team-index.png?v=2",
     servicesIndex: "/images/services-index.png",
     bacpBadge: "/images/bacp-badge.png",
     psychologyToday: "/images/psychology-today.jpg",

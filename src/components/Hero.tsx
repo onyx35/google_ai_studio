@@ -74,11 +74,11 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="md:col-span-6">
             <div className="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/90 shadow-sm relative">
               {/* Therapy Practice Image from Website - Complete Circle */}
-              <div className="relative rounded-full overflow-hidden mb-5 shadow-md aspect-square w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 max-w-full mx-auto group">
+              <div className="relative mb-5 aspect-square w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 max-w-full mx-auto group flex items-center justify-center">
                 <img
                   src={PRACTICE_INFO.images.teamIndex}
-                  alt="Talkaid Counselling Services"
-                  className="w-full h-full object-contain rounded-full transition-transform duration-500 group-hover:scale-105"
+                  alt="Raksha Patel - Talkaid Counselling Services"
+                  className="w-full h-full object-contain drop-shadow-md transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="text-center mb-5">
