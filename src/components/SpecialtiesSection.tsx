@@ -21,7 +21,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
           <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Clinical Specialisms & Symptoms
           </div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-4">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-4">
             You don&apos;t have to carry this alone.
           </h2>
           <div className="my-6 flex justify-center w-full">

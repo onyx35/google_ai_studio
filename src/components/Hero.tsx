@@ -4,20 +4,19 @@ import { PRACTICE_INFO } from '../data/counsellingData';
 
 interface HeroProps {
   onOpenBooking: () => void;
-  onExploreQuiz: () => void;
+  onExploreQuiz?: () => void;
   onSwitchToAudit: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({
   onOpenBooking,
-  onExploreQuiz,
   onSwitchToAudit
 }) => {
   return (
-    <section id="home" className="relative pt-4 sm:pt-6 pb-14 md:pb-20 overflow-hidden bg-stone-50 border-b border-stone-200">
+    <section id="home" className="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden border-b border-stone-200">
       {/* Subtle organic background accent */}
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-emerald-50/70 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-stone-200/50 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-stone-100/50 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -35,23 +34,15 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-normal tracking-tight text-stone-900 font-serif-display leading-[1.25] mb-4">
-              A calm, confidential space to <span className="font-serif-display italic font-medium text-[#b4c271]">heal</span>, understand yourself, and move forward.
+              A calm, confidential space to <span className="font-serif-display italic font-medium text-[#b4c271]">heal</span>, understand yourself, to move forward.
             </h1>
 
             <p className="text-stone-700 text-sm sm:text-base font-normal leading-relaxed mb-8 max-w-xl">
-              Professional, compassionate therapy for adults, couples, and young people dealing with anxiety, depression, trauma, ADHD, Autism and life crossroads. Discreet private consulting room in Oadby, Leicester with free parking, plus secure video sessions nationwide.
+              Professional, compassionate therapy for adults, couples, and young people dealing with anxiety, depression, trauma, ADHD, Autism and life crossroads. Discreet private consulting room in Oadby, Leicester with free parking, plus secure online sessions nationwide.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col items-start gap-3 mb-8 w-full">
-              <button
-                onClick={onExploreQuiz}
-                className="w-full sm:w-[380px] py-3.5 px-6 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs border border-[#9eb05b]/60 whitespace-nowrap"
-              >
-                <Sparkles className="w-4 h-4 text-stone-950 shrink-0" />
-                <span className="whitespace-nowrap">Questionaire - is therapy right for you?</span>
-              </button>
-
               <button
                 onClick={onOpenBooking}
                 className="w-full sm:w-[380px] py-3.5 px-6 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-sm transition-all shadow-xs border border-[#9eb05b]/60 flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"

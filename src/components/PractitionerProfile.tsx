@@ -19,7 +19,7 @@ export const PractitionerProfile: React.FC = () => {
           <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Meet Your Therapist & Clinical Supervisor
           </div>
-          <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             Raksha Patel
           </h2>
           <p className="text-emerald-900 font-medium text-sm sm:text-base">

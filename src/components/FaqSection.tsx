@@ -21,7 +21,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             <HelpCircle className="w-3.5 h-3.5" /> Reassurance & Clarification
           </div>
-          <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             Frequently Asked Questions
           </h2>
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed text-left">

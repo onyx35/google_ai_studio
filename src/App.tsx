@@ -9,7 +9,6 @@ import { Hero } from './components/Hero';
 import { WarmWelcomeSection } from './components/WarmWelcomeSection';
 import { ServicesSection } from './components/ServicesSection';
 import { SpecialtiesSection } from './components/SpecialtiesSection';
-import { TherapyQuiz } from './components/TherapyQuiz';
 import { PractitionerProfile } from './components/PractitionerProfile';
 import { FeesAndBooking } from './components/FeesAndBooking';
 import { LocalSeoSection } from './components/LocalSeoSection';
@@ -33,16 +32,6 @@ export default function App() {
       setPreselectedService(serviceId);
     }
     setIsBookingModalOpen(true);
-  };
-
-  const handleScrollToQuiz = () => {
-    setActiveView('website');
-    setTimeout(() => {
-      const el = document.getElementById('quiz');
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 50);
   };
 
   return (
@@ -70,7 +59,6 @@ export default function App() {
             {/* Live Enhanced Website for Talkaid Counselling Services */}
             <Hero
               onOpenBooking={() => handleOpenBooking()}
-              onExploreQuiz={handleScrollToQuiz}
               onSwitchToAudit={() => {
                 setActiveView('growth-audit');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -89,10 +77,6 @@ export default function App() {
 
             <SpecialtiesSection
               onOpenBooking={() => handleOpenBooking()}
-            />
-
-            <TherapyQuiz
-              onOpenBooking={(serviceId) => handleOpenBooking(serviceId)}
             />
 
             <FeesAndBooking

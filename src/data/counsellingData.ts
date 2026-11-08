@@ -117,7 +117,7 @@ export const SERVICES: ServiceItem[] = [
     tagline: "Move past recurring arguments into constructive, compassionate connection",
     description: "Therapy designed for couples feeling disconnected, caught in repetitive conflict cycles, navigating infidelity, or facing major relationship milestones. Neither partner is judged or blamed; we focus on the relationship dynamic.",
     targetAudience: "Couples at any stage seeking conflict resolution, intimacy renewal, or conscious uncoupling",
-    commonIssues: ["Communication Breakdown", "Loss of Trust / Infidelity", "Parenting Conflicts", "Intimacy Issues", "Recurring Arguments"],
+    commonIssues: ["Communication Breakdown", "Loss of Trust / Infidelity", "Parenting Conflicts", "Intimacy Issues", "Recurring Arguments", "All other areas of a relationship"],
     approach: "Systemic and Emotionally Focused techniques exploring attachment styles and de-escalating destructive conflict patterns.",
     inPersonAvailable: true,
     onlineAvailable: true

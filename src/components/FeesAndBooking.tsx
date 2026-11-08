@@ -25,7 +25,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
           <div className="inline-flex items-center text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Transparent Pricing & Budgeting
           </div>
-          <h2 className="text-3xl sm:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
             Clear, honest fees with no hidden costs.
           </h2>
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">

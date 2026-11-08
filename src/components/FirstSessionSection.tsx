@@ -10,7 +10,7 @@ export const FirstSessionSection: React.FC = () => {
             <div className="inline-flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-800 mb-2">
               <BookOpen className="w-4 h-4" /> The Process
             </div>
-            <h3 className="text-2xl sm:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-2">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-2">
               What happens during your first session?
             </h3>
             <p className="text-stone-700 text-sm sm:text-base max-w-xl mx-auto leading-relaxed text-left">

@@ -21,7 +21,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           <div className="inline-flex items-center text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
             Professional Practice Offerings
           </div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-4 whitespace-nowrap">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-4 whitespace-nowrap">
             Therapy tailored to where you are right now.
           </h2>
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">

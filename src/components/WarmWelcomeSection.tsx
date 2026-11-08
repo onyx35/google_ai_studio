@@ -49,7 +49,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
             <Heart className="w-3.5 h-3.5 text-stone-900 fill-stone-900/30" />
             <span>A Safe, Non-Judgmental Welcome</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-3 whitespace-nowrap">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-3 whitespace-nowrap">
             You don’t have to carry everything by yourself.
           </h2>
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.</p>
@@ -156,7 +156,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
             <span className="text-xs font-bold uppercase tracking-wider text-stone-500 block mb-1">
               Where to Start
             </span>
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 font-serif-display leading-tight mb-2">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-2">
               How are you feeling right now?
             </h3>
             <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
