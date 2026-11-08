@@ -19,7 +19,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
     {
       emoji: '💔',
       feeling: 'Disconnected from your partner',
-      reassurance: 'Communication breakdowns and lost intimacy are painful. We create a calm, neutral space where both of you can speak honestly without turning into an argument.',
+      reassurance: 'Communication breakdowns and lost intimacy are painful. We create a calm, neutral space where both of you can speak honestly, and openly to reconnect.',
       serviceId: 'couples-therapy'
     },
     {
@@ -52,7 +52,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-3 whitespace-nowrap">
             You don’t have to carry everything by yourself.
           </h2>
-          <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you are met with warmth, empathy, and unconditional kindness.</p>
+          <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">Taking the first step into counselling can feel vulnerable. Whether you are seeking therapy for the very first time or returning, you will be listened to in a non-judgemental and empathic way.</p>
         </div>
 
         {/* 2-Column Warm Philosophy & Therapist Message */}
@@ -75,7 +75,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
               </blockquote>
 
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
-                As a Registered Member of the British Association for Counselling and Psychotherapy (MBACP), I practice integrative therapy—which simply means I adapt to you and what you need, rather than forcing you into a rigid box.
+                As a Registered Member of the British Association for Counselling and Psychotherapy (MBACP), I practice integrative therapy—which simply means I adapt to you and what you need.
               </p>
             </div>
 
@@ -129,7 +129,7 @@ export const WarmWelcomeSection: React.FC<WarmWelcomeSectionProps> = ({ onOpenBo
                   <div>
                     <h5 className="font-semibold text-xs sm:text-sm text-stone-900">Quiet, Discreet Setting</h5>
                     <p className="text-xs text-stone-600 mt-0.5 leading-relaxed">
-                      Free on-street parking directly outside on Highcroft Avenue. Calm armchairs, ambient lighting, and complete privacy.
+                      Free on-street parking directly outside on Highcroft Avenue. Relaxing, ambient lighting, and complete privacy.
                     </p>
                   </div>
                 </div>

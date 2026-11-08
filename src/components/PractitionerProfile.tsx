@@ -32,7 +32,7 @@ export const PractitionerProfile: React.FC = () => {
           {/* Left Column: Biography & Ethos */}
           <div className="lg:col-span-7 space-y-5">
             <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
-              At Talkaid Counselling Services, I believe entering therapy is an act of genuine courage. Whether you are dealing with chronic anxiety that impacts your daily life, working through painful trauma or abuse, navigating marriage difficulties, or seeking clinical supervision, you are met with warmth, empathy, and unconditional respect.
+              At Talkaid Counselling Services, I believe entering therapy is an act of genuine courage. Whether you are dealing with chronic anxiety that impacts your daily life, working through painful trauma or abuse, navigating marriage difficulties, or seeking clinical supervision, you will be listened to in a non-judgemental and empathic way.
             </p>
 
             <p className="text-stone-700 text-sm sm:text-base leading-relaxed">

@@ -129,7 +129,7 @@ export const SERVICES: ServiceItem[] = [
     duration: "50 minutes",
     fee: "£60",
     tagline: "Empowering adolescents to navigate school pressure, anxiety, and identity",
-    description: "Having worked with young people for over 20 years, I have a confidential and understanding space for teenagers struggling with the overwhelming pressures of modern life. We help build emotional resilience, self-regulation tools, and healthy coping mechanisms.",
+    description: "Having worked with young people for over 20 years, I have extensive experience in understanding young pepole struggling with the overwhelming pressures of modern life. We help build emotional resilience, self-regulation tools, and healthy coping mechanisms.",
     targetAudience: "Young people aged 13–17 with parental consent where appropriate",
     commonIssues: ["Exam & Academic Pressure", "Social Anxiety & Friendship Issues", "Self-Harm Urges & Regulation", "Family Changes & Separation", "Identity & Self-Esteem", "Social Media"],
     approach: "Developmentally tailored integrative counselling with creative interventions and emotional literacy building.",
@@ -143,9 +143,9 @@ export const SERVICES: ServiceItem[] = [
     duration: "60 – 90 minutes",
     fee: "£65 – £75",
     tagline: "Professional support maintaining client safety, practitioner wellbeing, and ethical excellence",
-    description: "Collaborative, consultative supervision for qualified therapists, trainees, NHS healthcare staff, social workers, and care sector professionals. Rooted in the BACP Ethical Framework and Hawkins & Shohet's Seven-Eyed Model.",
+    description: "Collaborative, consultative supervision for qualified therapists, trainees counsellers, NHS healthcare staff, social workers, and any other professionals with too much pressure and nowhere to offload. This is practiced through Hawkins & Shohet's Seven-Eyed Model and the BACP Ethical Framework.",
     targetAudience: "Trainee & qualified counsellors, psychotherapists, support workers, and nurses",
-    commonIssues: ["Client Management", "Transference & Countertransference", "Ethical Dilemmas & Safeguarding", "Practitioner Burnout & Vicarious Trauma", "Accreditation Support", "Effect on you as a Counseller"],
+    commonIssues: ["Client Management", "Transference & Countertransference", "Ethical Dilemmas & Safeguarding", "Practitioner Burnout & Vicarious Trauma", "Client work", "Effect on you as a Counseller"],
     approach: "Seven-Eyed Model of Supervision, reflective inquiry, and ethical problem-solving.",
     inPersonAvailable: true,
     onlineAvailable: true
@@ -184,7 +184,7 @@ export const SPECIALTIES: IssueSpecialty[] = [
   {
     name: "Sexual Abuse & Survivor Support",
     category: "trauma",
-    description: "A deeply respectful, trauma-informed sanctuary for survivors to reclaim autonomy, safety, and bodily boundaries.",
+    description: "A deeply respectful, trauma-informed sanctuary for survivors to reclaim autonomy, safety, neglect and boundaries for sexual, physical and emotional abuse.",
     symptoms: ["Shame and self-blame", "Difficulty with physical intimacy", "Dissociation", "Boundary confusion"],
     therapeuticTechniques: ["Paced empowerment work", "Boundary restoration", "Shame deconstruction", "Safety stabilization"]
   },
@@ -198,7 +198,7 @@ export const SPECIALTIES: IssueSpecialty[] = [
   {
     name: "Burnout",
     category: "professional",
-    description: "Revitalising therapists, NHS staff, teachers, and family caregivers suffering from compassion fatigue.",
+    description: "Related to proffesional in high demanding jobs, revitalising therapists suffering from compassion fatigue.",
     symptoms: ["Emotional depletion", "Cynicism or detachment", "Physical exhaustion", "Loss of personal boundaries"],
     therapeuticTechniques: ["Boundary audit", "Vicarious trauma decontamination", "Self-compassion routines", "Restoration planning"]
   }
@@ -223,12 +223,12 @@ export const FAQS: FAQItem[] = [
   {
     category: "practical",
     question: "How much are sessions and how do I pay?",
-    answer: "Session fees are transparent with no hidden costs: Young People (under 18s) are £60 per 50 minutes; Individual Adults are £60 – £90 per 50 minutes; Couples Counselling is £90 per 60 minutes; Clinical Supervision is £60 – £80. Fees can be paid via secure bank transfer or card payment ahead of each session."
+    answer: "Session fees are transparent with no hidden costs: Young People (under 18s) are £60 per 50 minutes; Individual Adults are £65 – £90 per 50 minutes; Couples Counselling is £90 per 50 minutes; Clinical Supervision is £65 – £75. Fees can be paid by secure bank transfer, in advance of one session, or cash on the day."
   },
   {
     category: "clinical",
     question: "How many sessions will I need?",
-    answer: "Therapy is tailored to your individual needs. Some clients find that short-term focused therapy (6 to 12 sessions) is sufficient to work through a specific problem or acute transition. Others benefit from longer-term open-ended work for complex trauma or deep-seated relational patterns. We review our progress together every 6 sessions."
+    answer: "Therapy is tailored to your individual needs. Some clients find that short-term focused therapy is sufficient to work through a specific problem or acute transition. Others benefit from longer-term open-ended work for complex trauma or deep-seated relational patterns. We review our progress together every 6 sessions."
   },
   {
     category: "getting-started",
@@ -238,6 +238,6 @@ export const FAQS: FAQItem[] = [
   {
     category: "practical",
     question: "Can I do sessions online instead of visiting in person in Oadby?",
-    answer: "Absolutely. We offer secure video sessions (via encrypted Zoom) and telephone therapy for clients across Leicestershire and throughout the UK. Online therapy offers identical clinical effectiveness with the convenience of connecting from the comfort and privacy of your own home."
+    answer: "Absolutely. We offer secure video sessions (via Microsoft Teams) and telephone therapy for clients across Leicestershire and throughout the UK. Online therapy offers identical clinical effectiveness with the convenience of connecting from the comfort and privacy of your own home."
   }
 ];

@@ -175,7 +175,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                       onClick={() => onOpenBookingModal()}
                       className="text-stone-700 text-sm sm:text-base hover:text-stone-900 underline"
                     >
-                      Or prefer to schedule a specific call time? Click here
+                      Or prefer to scheduled callback? Click here
                     </button>
                   </div>
                 </form>

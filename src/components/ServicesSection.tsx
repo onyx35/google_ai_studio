@@ -25,7 +25,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             Therapy tailored to where you are right now.
           </h2>
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">
-            Whether you are wrestling with anxiety, depression, processing the past, ADHD, navigating a struggling relationship, or seeking professional clinical supervision, every session is grounded in empathy, safety, and evidence-based practice.
+            Whether you are wrestling with anxiety, depression, struggeling with symptons of ADHD, navigating a struggling relationship, or seeking professional clinical supervision, every session is grounded in empathy, safety, and evidence-based practice.
           </p>
         </div>
 

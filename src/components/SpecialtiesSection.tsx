@@ -32,7 +32,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
             />
           </div>
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6 text-left">
-            Therapy at Talkaid is rooted in compassionate and paced integrative practice. Explore the common challenges we support clients through each week. General counselling includes all the issues in the above poster. Below are some examples of what we deal with.
+            At Talkaid your threpy is guided by deep compassion and moves at a pace that feels right for your care. General counselling includes all the issues and many more from the above poster. Below are some examples of what we deal with.
           </p>
 
           <div className="flex items-center justify-center gap-1.5 p-1 bg-stone-200/70 rounded-xl max-w-fit mx-auto flex-wrap">

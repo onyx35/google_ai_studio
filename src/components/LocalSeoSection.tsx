@@ -89,7 +89,7 @@ export const LocalSeoSection: React.FC = () => {
               <Video className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-semibold text-stone-900 text-sm sm:text-base">Online Therapy Across the UK</h4>
+              <h4 className="font-semibold text-stone-900 text-sm sm:text-base">Online Therapy Available</h4>
               <p className="text-stone-700 text-sm sm:text-base mt-1 leading-relaxed">
                 If you reside outside Leicestershire or prefer attending from your home or office, we offer encrypted online sessions via Microsoft Teams, offering full parity of therapeutic care.
               </p>
