@@ -62,7 +62,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                 <div className="py-3.5 flex items-center justify-between text-base sm:text-lg">
                   <div>
                     <p className="font-semibold text-base sm:text-lg text-stone-900">Couples & Relationship Counselling</p>
-                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">60-minute joint session</p>
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">50-minute joint session</p>
                   </div>
                   <span className="text-stone-900 font-semibold text-base sm:text-lg">£90</span>
                 </div>
@@ -78,7 +78,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
                 <div className="py-3.5 flex items-center justify-between text-base sm:text-lg">
                   <div>
                     <p className="font-semibold text-base sm:text-lg text-stone-900">Clinical Supervision</p>
-                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">60 to 90 minutes for therapists & care staff</p>
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed">60 to 90 minutes</p>
                   </div>
                   <span className="text-stone-900 font-semibold text-base sm:text-lg">£65 – £75</span>
                 </div>
@@ -86,7 +86,7 @@ export const FeesAndBooking: React.FC<FeesAndBookingProps> = ({ onOpenBookingMod
 
               <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2 text-stone-700 text-sm sm:text-base leading-relaxed">
                 <CreditCard className="w-3.5 h-3.5 text-stone-400" />
-                <span>Payment accepted via online bank transfer or major debit/credit card. Invoices available for employer wellbeing schemes.</span>
+                <span>Payment accepted via online bank transfer or cash. Invoices available for employer wellbeing schemes.</span>
               </div>
             </div>
           </div>

@@ -29,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
             <span className="text-stone-700/60 hidden sm:inline" aria-hidden="true">·</span>
             <span className="text-stone-950 font-bold hidden sm:inline">
-              Leicestershire (In-Person) & Online
+              Leicestershire - In-Person & Online
             </span>
           </div>
 
@@ -55,57 +55,59 @@ export const Header: React.FC<HeaderProps> = ({
       </div>
 
       {/* Main Navigation */}
-      <div className="max-w-6xl mx-auto px-4 py-1.5 sm:py-2 flex items-center justify-between gap-4">
-        {/* Brand */}
-        <div className="flex items-center shrink-0">
-          <a href="#home" className="group flex items-center">
-            <img
-              src={PRACTICE_INFO.images.logo}
-              alt="Talkaid Counselling Services Logo"
-              className="w-auto h-auto max-w-[240px] max-h-14 sm:max-h-16 object-contain transition-transform group-hover:scale-[1.01]"
-            />
-          </a>
-        </div>
+      <div className="w-full bg-gradient-to-r from-[#f6f9ec] via-[#e4edc0] to-[#c7d686] border-t border-[#9eb05b]/30">
+        <div className="max-w-6xl mx-auto px-4 py-1.5 sm:py-2 flex items-center justify-between gap-4">
+          {/* Brand */}
+          <div className="flex items-center shrink-0">
+            <a href="#home" className="group flex items-center">
+              <img
+                src={PRACTICE_INFO.images.logo}
+                alt="Talkaid Counselling Services Logo"
+                className="w-auto h-auto max-w-[240px] max-h-14 sm:max-h-16 object-contain transition-transform group-hover:scale-[1.01]"
+              />
+            </a>
+          </div>
 
-        {/* Right Action */}
-        <div className="hidden md:flex items-center gap-4 ml-auto">
-          {activeView === 'website' ? (
-            <div className="flex items-center gap-4">
-              <nav className="flex items-center gap-5 text-xs font-medium text-stone-600 mr-2">
-                <a href="#services" className="hover:text-stone-900 transition-colors">Services</a>
-                <a href="#specialties" className="hover:text-stone-900 transition-colors">Issues</a>
-                <a href="#fees" className="hover:text-stone-900 transition-colors">Fees</a>
-                <a href="#location" className="hover:text-stone-900 transition-colors">Location</a>
-                <a href="#faqs" className="hover:text-stone-900 transition-colors">FAQs</a>
-              </nav>
+          {/* Right Action */}
+          <div className="hidden md:flex items-center gap-4 ml-auto">
+            {activeView === 'website' ? (
+              <div className="flex items-center gap-4">
+                <nav className="flex items-center gap-5 text-xs font-semibold text-stone-800 mr-2">
+                  <a href="#services" className="hover:text-stone-950 transition-colors">Services</a>
+                  <a href="#specialties" className="hover:text-stone-950 transition-colors">Concerns</a>
+                  <a href="#fees" className="hover:text-stone-950 transition-colors">Fees</a>
+                  <a href="#location" className="hover:text-stone-950 transition-colors">Location</a>
+                  <a href="#faqs" className="hover:text-stone-950 transition-colors">FAQs</a>
+                </nav>
 
+                <button
+                  onClick={() => onOpenBooking()}
+                  className="py-2 px-4 rounded-xl bg-emerald-900 hover:bg-emerald-950 text-white font-bold text-xs transition-all shadow-xs border border-emerald-950/30 inline-flex items-center justify-center shrink-0 whitespace-nowrap cursor-pointer"
+                >
+                  <span className="whitespace-nowrap">Free 10-Min Intro</span>
+                </button>
+              </div>
+            ) : (
               <button
-                onClick={() => onOpenBooking()}
-                className="py-2 px-4 rounded-xl bg-[#b4c271] hover:bg-[#a3b35a] text-stone-950 font-bold text-xs transition-all shadow-xs border border-[#9eb05b]/60 inline-flex items-center justify-center shrink-0 whitespace-nowrap cursor-pointer"
+                onClick={() => setActiveView('website')}
+                className="py-2 px-4 rounded-xl border border-stone-700/30 bg-white/80 hover:bg-white text-stone-800 text-xs font-semibold transition-colors flex items-center gap-1.5 whitespace-nowrap"
               >
-                <span className="whitespace-nowrap">Free 10-Min Intro</span>
+                <Compass className="w-3.5 h-3.5 text-stone-700" />
+                <span>Preview Live Client Site</span>
               </button>
-            </div>
-          ) : (
-            <button
-              onClick={() => setActiveView('website')}
-              className="py-2 px-4 rounded-xl border border-stone-300 hover:bg-stone-50 text-stone-700 text-xs font-semibold transition-colors flex items-center gap-1.5 whitespace-nowrap"
-            >
-              <Compass className="w-3.5 h-3.5 text-stone-500" />
-              <span>Preview Live Client Site</span>
-            </button>
-          )}
-        </div>
+            )}
+          </div>
 
-        {/* Mobile menu trigger */}
-        <div className="flex items-center gap-2 lg:hidden ml-auto">
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-stone-600 hover:text-stone-900 rounded-lg hover:bg-stone-100"
-            aria-label="Toggle navigation menu"
-          >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+          {/* Mobile menu trigger */}
+          <div className="flex items-center gap-2 lg:hidden ml-auto">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2 text-stone-800 hover:text-stone-950 rounded-lg hover:bg-white/40"
+              aria-label="Toggle navigation menu"
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
       </div>
 

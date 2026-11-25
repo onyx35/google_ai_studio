@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PRACTICE_INFO } from '../data/counsellingData';
-import { Shield, CheckCircle, Heart, Award, ExternalLink, Image as ImageIcon } from 'lucide-react';
+import { Shield, CheckCircle, Heart, Award, ExternalLink, Image as ImageIcon, Phone } from 'lucide-react';
 
 export const PractitionerProfile: React.FC = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<string>(PRACTICE_INFO.images.room1);
@@ -14,23 +14,23 @@ export const PractitionerProfile: React.FC = () => {
   return (
     <section id="about" className="py-16 md:py-24 bg-white border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Top Header */}
-        <div className="max-w-2xl mb-12">
-          <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
-            Meet Your Therapist & Clinical Supervisor
-          </div>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
-            Raksha Patel
-          </h2>
-          <p className="text-emerald-900 font-medium text-sm sm:text-base">
-            Qualified Counsellor, Psychotherapist & Clinical Supervisor · Registered Member MBACP
-          </p>
-        </div>
-
-        {/* First Row: Bio & Consultation Room Showcase */}
+        {/* Main Two-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          {/* Left Column: Biography & Ethos */}
+          {/* Left Column: Header, Biography & Ethos */}
           <div className="lg:col-span-7 space-y-5">
+            {/* Top Header */}
+            <div className="mb-6">
+              <div className="text-xs font-semibold tracking-wider text-emerald-800 uppercase mb-2">
+                Meet Your Therapist & Clinical Supervisor
+              </div>
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-stone-900 font-serif-display leading-tight mb-3">
+                Raksha Patel
+              </h2>
+              <p className="text-emerald-900 font-medium text-sm sm:text-base">
+                Qualified Counsellor, Psychotherapist & Clinical Supervisor · Registered Member MBACP
+              </p>
+            </div>
+
             <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
               At Talkaid Counselling Services, I believe entering therapy is an act of genuine courage. Whether you are dealing with chronic anxiety that impacts your daily life, working through painful trauma or abuse, navigating marriage difficulties, or seeking clinical supervision, you will be listened to in a non-judgemental and empathic way.
             </p>
@@ -91,8 +91,42 @@ export const PractitionerProfile: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Genuine Photos from talkaid website */}
-          <div className="lg:col-span-5">
+          {/* Right Column: Practitioner Card aligned with Consulting Space */}
+          <div className="lg:col-span-5 space-y-6">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/90 shadow-sm relative">
+              {/* Therapy Practice Image from Website - Complete Circle */}
+              <div className="relative mb-5 aspect-square w-64 h-64 sm:w-72 sm:h-72 max-w-full mx-auto group flex items-center justify-center">
+                <img
+                  src={PRACTICE_INFO.images.teamIndex}
+                  alt="Raksha Patel - Talkaid Counselling Services"
+                  className="w-full h-full object-contain drop-shadow-md transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="text-center mb-5">
+                <h3 className="font-bold text-stone-900 text-sm font-serif-display">
+                  Raksha Patel
+                </h3>
+                <p className="text-xs text-emerald-800 font-semibold mt-0.5">
+                  Talkaid Counselling Services · MBACP
+                </p>
+              </div>
+
+              {/* Direct Call / Contact Banner */}
+              <div className="bg-[#b4c271] text-stone-950 rounded-2xl p-4 flex items-center justify-between gap-3 border border-[#9eb05b]/60 shadow-xs">
+                <div>
+                  <p className="text-xs text-stone-900 font-medium">Prefer to speak first?</p>
+                  <p className="text-sm font-bold tracking-tight text-stone-950">{PRACTICE_INFO.phone}</p>
+                </div>
+                <a
+                  href={`tel:${PRACTICE_INFO.phone.replace(/\s+/g, '')}`}
+                  className="py-2 px-3.5 rounded-xl bg-stone-900 hover:bg-black text-white text-xs font-semibold transition-colors flex items-center gap-1.5 shrink-0"
+                >
+                  <Phone className="w-3.5 h-3.5 text-stone-200" />
+                  <span>Call Now</span>
+                </a>
+              </div>
+            </div>
+
             <div className="bg-stone-50 rounded-3xl p-5 border border-stone-200/90 shadow-2xs">
               <div className="flex items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-800">

@@ -25,7 +25,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             Therapy tailored to where you are right now.
           </h2>
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-left">
-            Whether you are wrestling with anxiety, depression, struggeling with symptons of ADHD, navigating a struggling relationship, or seeking professional clinical supervision, every session is grounded in empathy, safety, and evidence-based practice.
+            Whether you are wrestling with anxiety, depression, struggling with symptoms of ADHD, navigating relationships, or seeking professional clinical supervision, every session is grounded in empathy, safety, and evidence-based practice.
           </p>
         </div>
 
@@ -124,6 +124,15 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom Centered Illustration */}
+        <div className="mt-10 mx-auto w-full md:w-[calc(50%-0.75rem)] rounded-2xl overflow-hidden border border-stone-200 shadow-xs bg-white">
+          <img
+            src="/assets/aistudio/talkaid_website_4a22891b.JPG"
+            alt="Counselling conversation illustration"
+            className="w-full h-auto block object-cover"
+          />
         </div>
       </div>
     </section>

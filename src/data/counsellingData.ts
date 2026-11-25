@@ -69,7 +69,8 @@ export const PRACTICE_INFO = {
     "Fully Insured for Private Practice",
     "BACP Ethical Framework Compliant",
     "Regular Clinical Supervision",
-    "ICO registered (GDPR)"
+    "ICO registered (GDPR)",
+    "Language - English and Gujarati"
   ],
   phone: "07983 680550",
   email: "info@talkaidcounsellingservices.co.uk",
@@ -112,7 +113,7 @@ export const SERVICES: ServiceItem[] = [
     id: "couples-therapy",
     title: "Couples & Relationship Therapy",
     subtitle: "Rebuild communication, repair emotional safety, and find understanding",
-    duration: "60 minutes",
+    duration: "50 minutes",
     fee: "£90",
     tagline: "Move past recurring arguments into constructive, compassionate connection",
     description: "Therapy designed for couples feeling disconnected, caught in repetitive conflict cycles, navigating infidelity, or facing major relationship milestones. Neither partner is judged or blamed; we focus on the relationship dynamic.",
@@ -129,7 +130,7 @@ export const SERVICES: ServiceItem[] = [
     duration: "50 minutes",
     fee: "£60",
     tagline: "Empowering adolescents to navigate school pressure, anxiety, and identity",
-    description: "Having worked with young people for over 20 years, I have extensive experience in understanding young pepole struggling with the overwhelming pressures of modern life. We help build emotional resilience, self-regulation tools, and healthy coping mechanisms.",
+    description: "With over 20 years of experience working with young people, I understand the overwhelming pressures of modern life. We help build emotional resilience, self-regulation tools, and healthy coping mechanisms.",
     targetAudience: "Young people aged 13–17 with parental consent where appropriate",
     commonIssues: ["Exam & Academic Pressure", "Social Anxiety & Friendship Issues", "Self-Harm Urges & Regulation", "Family Changes & Separation", "Identity & Self-Esteem", "Social Media"],
     approach: "Developmentally tailored integrative counselling with creative interventions and emotional literacy building.",
@@ -145,7 +146,7 @@ export const SERVICES: ServiceItem[] = [
     tagline: "Professional support maintaining client safety, practitioner wellbeing, and ethical excellence",
     description: "Collaborative, consultative supervision for qualified therapists, trainees counsellers, NHS healthcare staff, social workers, and any other professionals with too much pressure and nowhere to offload. This is practiced through Hawkins & Shohet's Seven-Eyed Model and the BACP Ethical Framework.",
     targetAudience: "Trainee & qualified counsellors, psychotherapists, support workers, and nurses",
-    commonIssues: ["Client Management", "Transference & Countertransference", "Ethical Dilemmas & Safeguarding", "Practitioner Burnout & Vicarious Trauma", "Client work", "Effect on you as a Counseller"],
+    commonIssues: ["Client Management", "Transference & Countertransference", "Ethical Dilemmas & Safeguarding", "Practitioner Burnout & Vicarious Trauma", "Client work", "Effect on you as a Counseller or a professional"],
     approach: "Seven-Eyed Model of Supervision, reflective inquiry, and ethical problem-solving.",
     inPersonAvailable: true,
     onlineAvailable: true
@@ -170,7 +171,7 @@ export const SPECIALTIES: IssueSpecialty[] = [
   {
     name: "Anxiety & Panic Disorders",
     category: "emotional",
-    description: "Deconstructing overwhelming worry loops of over thinking, catastrophic thinking, insucure thoughts, and physiological panic sensations.",
+    description: "Deconstructing overwhelming worry loops of overthinking, catastrophic thinking, insecure thoughts, and psychological panic sensations.",
     symptoms: ["Racing heart & breathlessness", "Constant dread or worry", "Avoidance of places or social situations", "Brain fog & muscle aches"],
     therapeuticTechniques: ["Cognitive restructuring", "Vagus nerve soothing techniques", "Exposure & pacing plans", "Mindfulness-based acceptance"]
   },
@@ -198,7 +199,7 @@ export const SPECIALTIES: IssueSpecialty[] = [
   {
     name: "Burnout",
     category: "professional",
-    description: "Related to proffesional in high demanding jobs, revitalising therapists suffering from compassion fatigue.",
+    description: "Related to professionals in high demanding jobs, revitalising therapists suffering from compassion fatigue.",
     symptoms: ["Emotional depletion", "Cynicism or detachment", "Physical exhaustion", "Loss of personal boundaries"],
     therapeuticTechniques: ["Boundary audit", "Vicarious trauma decontamination", "Self-compassion routines", "Restoration planning"]
   }
@@ -209,16 +210,6 @@ export const FAQS: FAQItem[] = [
     category: "getting-started",
     question: "How do I take the first step, and what happens in the free 10-minute call?",
     answer: "Taking the first step is often the hardest part. You can either submit an inquiry through our form or call 07983 680550. We arrange a brief, informal 10-minute phone conversation. This gives you a chance to share a little of what brings you to therapy, ask any questions, and see if working together feels comfortable and safe—with zero obligation to book."
-  },
-  {
-    category: "practical",
-    question: "Where is the therapy room located in Leicester, and is there parking?",
-    answer: "Our private practice is located at 19 Highcroft Avenue, Oadby, Leicester, LE2 5UH. It is a quiet, discreet residential location just off the A6, easily accessible from Leicester City Centre, Wigston, Knighton, and Blaby. Free and easy on-street parking is available directly outside."
-  },
-  {
-    category: "clinical",
-    question: "What does 'Registered Member MBACP' mean and why does it matter?",
-    answer: "BACP (British Association for Counselling and Psychotherapy) is the UK's leading professional body for therapists. Being a Registered Member means our practitioner has completed extensive formal accredited psychotherapy training, adheres to a strict Ethical Framework, undergoes monthly clinical supervision, holds valid professional indemnity insurance, and maintains up-to-date Enhanced DBS clearance."
   },
   {
     category: "practical",
