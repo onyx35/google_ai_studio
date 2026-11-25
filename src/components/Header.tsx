@@ -48,7 +48,7 @@ export const Header: React.FC<HeaderProps> = ({
               title="Urgent mental health support contacts"
             >
               <HeartPulse className="w-3.5 h-3.5 text-rose-800" />
-              <span className="text-stone-950 font-bold">Urgent Support</span>
+              <span className="text-stone-950 font-bold">Emergency Support</span>
             </button>
           </div>
         </div>

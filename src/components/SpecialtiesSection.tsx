@@ -146,7 +146,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({ onOpenBo
             onClick={onOpenBooking}
             className="py-2.5 px-4 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-semibold whitespace-nowrap transition-colors shrink-0 cursor-pointer"
           >
-            Book Free Introductory Call
+            Book a free introductory call
           </button>
         </div>
       </div>
